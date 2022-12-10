@@ -1,0 +1,333 @@
+/*
+***
+*****
+*********
+****************
+**************************
+***************************************
+*****************************************************
+********************************************************************
+***************************************************************************************
+**************************************************************************************************
+**************************************************************************************************
+******************************************css framework*******************************************
+/**********************************************by*************************************************
+/*************************************************************************************************
+/*----////////////---///---///----////////////---//////-//////---////-------//--//////--////------
+/*----///------///----------------///------------//--//-//--//-//----//-----//--//------//--/////-
+/*----///------///---///---///----///------------//////-/////--//----//-----//--//////--//---//---
+/*----////////////---///---///----////////////---//-----//-/---//----//----///--//------//---//---
+/*----///-///--------///---///-------------///---//-----//--/----////---////--//////--////--------
+/*----///---///------///---///-------------///----------------------------------------------------
+/*----///----///-----///---///----////////////----------------------------------------------------
+**************************************************************************************************
+**************************************************************************************************
+**************************************************************************************************
+**************************************************************************************************
+***************************************************************************************
+********************************************************************
+*****************************************************
+***************************************
+**************************
+****************
+*********
+*****
+***
+*/
+/*--span color project--*/
+.red {background-color:red;border-radius:8px;padding:6px;color:white;}
+.cyan {background-color:cyan;border-radius:8px;padding:6px;color:white;}
+.green {background-color:green;border-radius:8px;padding:6px;color:white;}
+.orange {background-color:orange;border-radius:8px;padding:7px;color:white;text-decoration:none;border:solid 2px darkorange;}
+.violet {background-color:violet;border-radius:8px;padding:6px;color:white;}
+.chocolate {background-color:chocolate;border-radius:8px;padding:6px;color:white}
+.pink {background-color:pink;border-radius:8px;padding:6px;color:white;}
+.spesial {background-color:rgb(52, 15, 198);border-radius:8px;padding:6px;color:white;}
+.darkorange {background-color:darkorange;border-radius:8px;padding:6px;color:white;}
+.orangenobtn {background-color:orange;border-radius:8px;padding:6px;color:white;}
+.segera {background-color:darkorange;border-radius:5px;padding:2px;color:white;}
+.year {background-color:darkslategrey;border-radius:8px;padding:2px 5px;color:white;}
+.black1 {background-color:black;}
+
+/*color-text*/
+.slate {color: rgb(110, 151, 151);}
+.white {color:white;}
+
+/*blok*/
+.blokgrey {width:100%;display:block;background-color:#5c6379;color:#d5daec;box-shadow:none;padding:10px;}
+.blokgrey:hover {display: block;border-width: 0px;}
+.buttonr1 {background-color:rgb(34, 145, 0);color:#e7f5f0;padding:8px;border-radius:8px;border:#41d606 2px solid;text-decoration:none;}
+.buttonr1:hover {background-color:#3ff71a;color:#17382c;border:#9dfc06 2px solid;border-radius:8px;}
+.buttonr2 {background-color:rgb(145, 0, 12);color:#e7f5f0;padding:8px;border-radius:8px;border:#4e1010 2px solid;text-decoration:none;}
+.buttonr2:hover {background-color:#aa3c3c;color:#e8f8f2;border:#794848 2px solid;border-radius:8px;}
+.buttonr3 {background-color:rgb(35, 67, 80);color:#e7f5f0;padding:8px;border-radius:8px;border:#002629 2px solid;text-decoration:none;}
+.blokaddons {display:block;border-radius:8px;padding:7px;background-color:#4a4d57;color:#e4e7f1;border:#1a1429 1px solid;}
+.sedow3 {box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.3);}
+.sedow2 {box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);}
+.sedowimg {box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);border-radius:25px;}
+.sedow1 {box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.1);}
+.sedowbt {box-shadow: 1px 3px 7px 2px rgba(0,0,0,0.1);}
+img.bannerrounded {border-radius:25px;}
+
+
+.demon {
+  background-color: #159747;
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+  font-family: Nunito;
+}
+
+/* width project */
+.width20 {width:20%;}
+.width25 {width:25%;}
+.width30 {width:30%;}
+.width40 {width:40%;}
+.width50 {width:50%;}
+.width70 {width:70%;}
+.width80 {width:80%;}
+.width100 {width:100%;}
+
+/* heading */
+
+h1 {font-size:22px}
+h2 {font-size:18px}
+h3 {font-size:16px}
+h4 {font-size:12px}
+h5 {font-size:10px}
+h6 {font-size:8px}
+h7 {font-size:6px}
+h8 {font-size:4px}
+
+/* install font */
+@font-face {font-family:Acme;src:url('/f/Acme.ttf');}
+.Acme {font-family:Acme;}
+@font-face {font-family:Albert500;src:url('/f/Albert500.ttf');}
+.Albert500 {font-family:Albert500;}
+@font-face {font-family:Albert900;src:url('/f/Albert900.ttf');}
+.Albert900 {font-family:Albert900;}
+@font-face {font-family:Nunito;src:url('/f/Nunito.ttf');}
+.Nunito {font-family:Nunito;}
+@font-face {font-family:Fredoka;src:url('/f/Fredoka.ttf');}
+.Fredoka {font-family:Fredoka;}
+
+
+/* when dark mode enabled, change it */
+.dark-mode {background-color:darkslategray;color:snow}
+
+/* coloring body teks */
+body.cyan {background-color:rgb(235, 252, 252);color:rgb(30, 159, 171)}
+body.green {background-color:rgb(239, 250, 238);color:rgb(51, 171, 30)}
+body.orange {background-color:rgb(252, 248, 235);color:rgb(227, 78, 14)}
+body.red {background-color:rgb(252, 235, 235);color:rgb(200, 45, 45)}
+body.pink {background-color:rgb(252, 235, 244);color:rgb(192, 37, 112)}
+body.violet {background-color:rgb(247, 235, 252);color:rgb(133, 30, 171)}
+body.chocolate {background-color:rgb(252, 237, 235);color:rgb(171, 103, 30)}
+body.spesial {background-color:rgb(240, 235, 252);color:rgb(22, 45, 178)}
+body.basic {background-color:rgb(65, 23, 190);color:rgb(212, 215, 234)}
+
+/* button */
+.button-green {background-color:rgb(47, 168, 47);color:rgb(232, 241, 219);padding:6px;font-size:15px;text-decoration:none;width:100%;}
+.button-cyan {background-color:rgb(47, 138, 168);color:rgb(232, 241, 219);padding:6px;margin:auto;font-style:bold;font-size:15px;}
+.button-orange {background-color:rgb(185, 101, 6);color:rgb(232, 241, 219);padding:6px;margin:auto;font-style:bold;font-size:15px;}
+.blockbutton {
+  display: block;
+  width: 100%;
+  padding: 7px; 
+  border: none;
+  text-decoration:none;
+  background-color: #0fa06b;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.orange:hover {border-color:yellow;border-radius:8px;border-width:2px;border-style:solid;}
+
+.blockbutton:hover {
+  background-color:darkslategrey;
+  color:white;
+}
+
+
+/*tabbing*/
+
+.topright {
+  float: right;
+  cursor: pointer;
+  color:grey;
+  font-size:30px;
+}
+
+.topright:hover {color: red;}
+
+.tabz {display:none;padding:15px;border-radius:10px;background-color:snow;color:rgb(65, 23, 190);}
+.normal {width:50%;padding:5px;display:inline-block;background-color:snow;color:#0515a5;text-align:center;border:none;outline:none;cursor:pointer;}
+.normal1 {border-top-left-radius:20px;}
+.normal2 {border-top-right-radius:20px;}
+.normal3 {border-bottom-left-radius:20px;border-bottom-right-radius:20px;}
+.r1 {border-radius:20px;}
+
+
+.tablinkz {cursor:pointer;}
+.cursor {cursor:pointer;}
+
+/* Style the tab content */
+.tabharga { 
+  color: #0515a5;
+  display: none;
+  padding: 10px;
+}
+
+#basiccc {background-color:cyan;}
+#premium {background-color:cyan;}
+
+
+/*slideshow project*/
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev,
+.next {
+  cursor: pointer;
+  width: 40%;
+  color: rgb(65, 23, 190);
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 30px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.mySlides {
+  display: none;
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+
+/* cool fade */
+.fade {
+  animation-name:faded;
+  animation-duration:1.3s
+}
+
+@keyframes faded {
+  from {opacity:0.0;}
+  to {opacity:1;}
+}
+
+.top {position:relative;animation:animatetop 1.3s}
+@keyframes animatetop{from{top:-30px;opacity:0} to{top:0;opacity:1}}
+
+a {text-decoration:none;}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #44ae1e;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+/*form order */
+
+/* Input Field CSS */
+.datainput{position:relative;margin:5px 0 20px}.datainput p{font-size:12px;background:snow;display:inline-block;padding:5px 15px;border-radius:.5rem}.whatsapp-form textarea{min-height:120px}.datainput select{padding:12px 0;color:#555;font-size:14px;width:100%;border:0;border-bottom:1px solid #ddd;outline:none;background:#fff}.datainput input,.datainput textarea{font-size:15px;padding:15px 0;display:block;width:100%;border:none;border-bottom:1px solid #ddd}.datainput input:focus,.datainput textarea:focus{outline:none}.datainput label{color:#999;font-size:14px;font-weight:400;position:absolute;pointer-events:none;left:0;top:18px;transition:.2s ease all}.datainput input:focus~label,.datainput input:valid~label,.datainput textarea:focus~label,.datainput textarea:valid~label{top:-10px;font-size:14px;color:#21a51f}#notif-license span{font-size:40px}#notif-license{display:none;position:fixed}.bar{position:relative;display:block;width:100%}.bar:before,.bar:after{content:'';height:2px;width:0;bottom:1px;position:absolute;background:#21a51f;transition:.2s ease all}.bar:before{left:50%}.bar:after{right:50%}.datainput input:focus~.bar:before,.datainput input:focus~.bar:after,.datainput textarea:focus~.bar:before,.datainput textarea:focus~.bar:after{width:50%}.indigox{background:#3f51b5}.orangex{background:#ff9800}.pinkx{background:#e91e63}.bluex{background:#2196F3}.purplex{background:#9c27b0}.redx{background:#F44336}.greenx{background:#4CAF50}.highlight{position:absolute;height:50%;width:100px;top:25%;left:0;pointer-events:none;opacity:.5}.datainput input:focus~.highlight,.datainput textarea:focus~.highlight{animation:inputHighlighter .3s ease}.datainput input:focus~label,.datainput input:valid~label,.datainput textarea:focus~label,.datainput textarea:valid~label{top:-10px;font-size:13px;color:#21a51f}
+
+/* Default Whatsapp Form CSS by www.idblanter.com */
+form.whatsapp-form {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-radius: .5rem;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+ .whatsapp-form a.send_form {
+    color: #fff;
+    background: #21a51f;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: .3rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 15px;
+}
+#text-info span {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 700;
+    margin: 15px 0;
+    border-radius: .5rem;
+}
+#text-info span.yes {
+    background: #c6ffc5;
+    color: #0ea904;
+}
+#text-info span.no {
+    background: #ffc5c5;
+    color: #ce0404;
+}
+.whatsapp-form{
+  width:100%;
+  max-width:420px;
+  margin:0 auto;
+  box-sizing:border-box;
+}

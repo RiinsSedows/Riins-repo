@@ -1,0 +1,75 @@
+
+/* animate it */
+
+/**/
+#sliding {margin:0px;padding:0px;width:360px;height:250px;object-fit:cover;object-position: 0% 0%;animation: glitch 30s infinite;}  
+@keyframes glitch {
+    0% {
+      object-position: 0% 0%;
+    }
+    50% {
+      object-position: 50% 0%;
+    }  
+    100% {
+        object-position: 100% 0%;
+      } 
+}
+
+/**/
+.ngezoom {
+    animation:animatezoom 0.6s
+}
+@keyframes animatezoom {
+    from{transform:scale(0)}
+    to{transform:scale(1)}
+}
+
+/**/
+.gradings {
+    animation: grads 4s infinite;
+  }
+  
+  @keyframes grads {
+    from {background-color: #1fe92f;}
+    to {background-color: #323232;}
+  }
+
+  
+#slidingngelitch {
+    width: 340px;
+    height: 210px;
+    border-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+    -webkit-animation: gaweglitch 30s infinite;
+            animation: gaweglitch 30s infinite;
+  }
+  
+  @-webkit-keyframes gaweglitch {
+    0% {
+      object-position: 0% 0%;
+    }
+    50% {
+      object-position: 50% 0%;
+    }
+    100% {
+      object-position: 100% 0%;
+    }
+  }
+  
+  @keyframes gaweglitch {
+    0% {
+      -o-object-position: 0% 0%;
+         object-position: 0% 0%;
+    }
+    50% { 
+      -o-object-position: 50% 0%;
+         object-position: 50% 0%;
+    }
+    100% {
+      -o-object-position: 100% 0%;
+         object-position: 100% 0%;
+    }
+} 

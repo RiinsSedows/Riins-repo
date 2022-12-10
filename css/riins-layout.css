@@ -1,0 +1,108 @@
+/* test mode */
+
+/* this layout is optimized for mobile devices */
+body {background-size:cover;margin-left:auto;margin-right:auto;width:100%;max-width:420px;height:100%;margin-top:0px;margin-bottom:0px;font-family:Nunito;}
+.container100 {width:100%;max-width:420px;margin:auto;}
+.container80 {width:80%;max-width:420px;margin:auto;}
+.container60 {width:60%;max-width:420px;margin:auto;}
+.banner {width:100%;height:250px;margin:0px;padding:0px;}
+.header {width:100%;margin:15px;padding:0px;}
+.footer {width:100%;margin:0px;padding:0px;}
+.left {position:relative;float:left;}
+.right {position:relative;float:right;}
+.center-image {position:relative;display:flex;justify-content:center;margin-left:auto;margin-right:auto;}
+.center-item {display:block;margin-left:auto;margin-right:auto;width:100%;}
+.center-text {text-align:center;align-items:center;}
+.left-text {text-align:left;align-items:center;}
+.right-text {text-align:right;align-items:center;}
+.justify-text {text-align:justify;align-items:center;}
+.align-last-center {text-align-last: center;}
+.align-last-justify {text-align-last: justify;}
+.padding40 {padding:40px;} 
+.margin1 {margin:10px;}
+.margin2 {margin:20px;} 
+.margin3 {margin:30px;}
+.margin4 {margin:40px;}
+.marginspesial {margin-top:15px;}
+.marginspesial2 {margin-top:30px;}
+.marginspesialleft {margin-left:10px;}
+.marginspesialright {margin-right:10px;}
+.margin-50 {margin-top:-50px;}
+.margin-30 {margin-top:-30px;}
+.margin-15 {margin-top:-15px;}
+.margin-10 {margin-top:-10px;}
+.marginplus20 {margin-bottom:20px;}
+.width50 {width:50%}
+.width100 {width:100%}
+.marginrl {margin-left:10px;margin-right:10px;}
+.z1 {position:relative;z-index: 1;}
+.z0 {position:relative;z-index: 0;}
+.rounded1 {background-color:azure;color:#0515a5;border-radius:35px;box-shadow: #d4d5d7;padding:10px;}
+.rounded2 {background-color:azure;color:#0515a5;border-radius:20px;box-shadow: #d4d5d7;padding:10px;}
+.navigasi {width:100%;max-width:420px;position:fixed;bottom:0;overflow:hidden;}
+.navbutton {background-color:snow;border-radius:20px 20px 0px 0px;color:#0515a5;}
+.navbutton:hover {background-color:darkslategrey;color:snow;}
+.area-play {width:300px;height:500px;}
+
+.blokade15 {width:100%;height:15px;display:block;}
+.blokade70 {width:100%;height:70px;display:block;}
+
+.f {
+  width: 45%;
+  float: left;
+  margin-left:5px;
+  display: block;
+  background-color: #74c694;
+  color: #077d35;
+  border-radius: 30px;
+  padding: 4px;
+}
+
+.p {
+  width: 45%;
+  float: right;
+  margin-right:5px;
+  display: block;
+  background-color: #74c694;
+  color: hsl(143, 89%, 26%);
+  border-radius: 30px;
+  padding:4px;
+}
+
+.batas {
+  display: block;
+  height: 12px;
+  position: relative;
+}
+
+.fp-sub-text {
+  color: #077d35;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fp-sub-block {
+  background-color: #077d35;
+  color: white;
+  width: 80%;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.rounded {
+  margin: 0px 0px 0px 0px;
+  background-color: #74c694;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 10px;
+}
+
+.inner {
+  background-color: #077d35;
+  border-radius: 30px;
+  max-width: 90%;
+  color: #e3f2e3;
+  padding: 15px;
+}
