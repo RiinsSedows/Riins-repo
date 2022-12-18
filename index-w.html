@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            @media screen and (max-width: 430px) {
+            div.container{
+                width:100%;
+                max-width:430px;
+                height:170px;
+            }
+            }
+            @media screen and (max-width: 600px),(min-width:440px) {
+            div.container{
+                width:100%;
+                max-width:600px;
+                height:220px;
+            }
+            }
+            @media screen and (min-width: 800px) {
+            div.container{
+                width:100%;
+                max-width:100%;
+                height:330px;
+            }
+            }
+
+            h1, p, h2, h3, h4, h5, h6 {margin:0;}
+            .mnf {font-family:monospace;font-size:70px;}
+            body{background-color:darkslategrey;color:azure;margin:0;}
+            button{cursor: pointer;}
+            .container{width:100%;display:flex;text-align: center;flex-direction: column;justify-content:center;}
+            .navime{width:100%;height:170px;display:flex;justify-items: center;background-image:url(https://www.riins.xyz/images/topper.png);background-size:cover;}
+            .navime2{width:100%;height:100%;display:flex;justify-items: center;}
+            .mid{margin:auto;}
+            button{border:none}
+            .row{display: flex;justify-content: center;flex-direction: row;}
+            .col{display: flex;justify-content: center;flex-direction: column;}
+            .m2{margin:20px;}
+            .right{position:fixed;top:20px;right:20px;display:flex;flex-direction:column;justify-content:center;}
+            .aes-1{margin:10px;padding:5px 10px;background-color: azure;border-radius:10px;color:darkslategrey;cursor: pointer;}
+            .bottom{position:fixed;bottom:0;height:50px;width:100%;display:flex;justify-content:center;}
+            .aes-1:hover{transform: scale(1.1);box-shadow:0 3px 3px #303040 ;background-color: rgb(200,200,200);color:darkslategrey;transition: 0.4s ease;}
+            .aes-1:active{background-color:green;}
+            .showup {position:relative;animation: s-up 0.6s ease;}
+            @keyframes s-up {
+                from{bottom:-100px;}
+                to{bottom:0;}
+            }
+            .showbot {position:relative;animation: s-bot 0.6s ease;}
+            @keyframes s-bot {
+                from{top:-100px;}
+                to{top:0;}
+            }
+            .fade-in{position:relative;animation: fade 0.5s ease;}
+            .fade-in1{position:relative;animation: fade 0.5s ease;animation-delay: 100ms;}
+            .fade-in2{position:relative;animation: fade 0.5s ease;animation-delay: 150ms;}
+            .fade-in3{position:relative;animation: fade 0.5s ease;animation-delay: 250ms;}
+            .fade-in4{position:relative;animation: fade 0.5s ease;animation-delay: 300ms;}
+            .fade-in5{position:relative;animation: fade 0.5s ease;animation-delay: 350ms;}
+
+            @keyframes fade {
+                from{opacity:0}
+                to{opacity: 1;}
+            }
+            h1::first-letter{font-size: 200%;color:rgb(70, 195, 70);}
+            .s11{font-size:11px;}
+            .s13{font-size:13px;}
+            .s16{font-size:16px;}
+            .s20{font-size:20px;}
+            .s25{font-size:25px;}
+            .s35{font-size:35px;}
+            .s45{font-size:45px;}
+            .w80{width:80%;}
+            .pad20{padding:20px;}
+
+            .modal{
+            display: block;
+            position: fixed;
+            z-index: 1;
+            padding-top: 0;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 0;
+            background-color: rgba(0,0,0,0.8);
+            overflow: hidden;
+            transition: 0.7s ease;
+            }
+            .modal4 {
+            display: block;
+            position: fixed;
+            z-index: 1;
+            padding-top: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            overflow: hidden;
+            transition: 0.7s ease;
+            }
+            .modal3 {
+            display: block;
+            position: fixed;
+            z-index: 1;
+            padding-top: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            overflow: hidden;
+            transition: 0.7s ease;
+            }
+            .modal2 {
+            display: block;
+            position: fixed;
+            z-index: 1;
+            padding-top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0;
+            background-color: rgba(0,0,0,0.8);
+            overflow: hidden;
+            transition: 0.7s ease;
+            }
+            .modal1{
+            display: block;
+            position: fixed;
+            z-index: 1;
+            padding-top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            transform:scale(0);
+            background-color: rgba(0,0,0,0.8);
+            overflow: hidden;
+            transition: 0.7s ease;
+            }
+
+            .modal-content {
+            background-color: #333;
+            color:white;
+            height:75%;
+            width: 100%;
+            box-shadow: 0 5px 10px rgba(20, 12, 12, 0.8);
+            text-align: center;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            justify-items:center;
+            }
+
+            .modal-footer{height:15%;width:100%;display:flex;justify-content: center;justify-items: center;}
+
+            .close,.close2,.close3,.close4,.close5 {
+            color: #aaaaaa;
+            font-size: 28px;
+            font-weight: bold;
+            margin: auto;
+            background-color:darkslategrey;
+            padding: 5px 13px;
+            border-radius:10px;
+
+            }
+
+            .close:hover,.close2:hover,.close3:hover,.close4:hover,.close5:hover {
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.1s ease;
+            box-shadow: 0 0 4px rgba(200,200,200,0.8);
+            }
+            @keyframes fade {
+                from{position:relative; top:-100px;opacity: 0;}
+                to{position:relative; top:0;opacity: 1;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navime2">
+                <div class="mid">
+                    <div class="content">
+                        <div class="row">
+                            <h1 class="mnf">HELLO</h1>
+                        </div>
+                        <h2>This is my personal website</h2>
+                        <br><br>
+                        <h4>What do you want to know about me?</h4>
+                    </div>
+                    <div class="row m2">
+                        <button id="submitID" class="aes-1 fade-in1">About Me</button>
+                        <button id="submitID1" class="aes-1 fade-in2">Experience</button>
+                        <button id="submitID2" class="aes-1 fade-in3">Skills</button>
+                        <button id="submitID3" class="aes-1 fade-in4">Project</button>
+                        <button id="submitID4" class="aes-1 fade-in5">My Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="mid">
+                |<strong> 2022 </strong>|
+            </div>
+        </div>
+
+        <!-- -->
+        <div class="modal">
+        <div class="modal-content">
+            <div class='pad20'>
+                <p class='s35'>About Me</p>
+                <p class='s13'>Let me introduce myself sir, my name's <strong>Febry Agung Krismiyanto</strong>, i was born on Banyumas Regency, Central of Java at 2 Februari 1999. Yeah now i was 23th y.o.</p>
+            </div>
+            <div class='col'>
+                <div class='row'>
+                    <img class='image' src='image/hobby.png'>
+                    <img class='image' src='image/hobby.png'>
+                    <img class='image' src='image/hobby.png'>
+                    <img class='image' src='image/hobby.png'>
+                    <img class='image' src='image/hobby.png'>
+                </div>
+                <span class='content-text'>There are about me.</span>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <span id='closeit' class="close">Back</span>
+        </div>
+        </div>
+
+            <div class="modal1">
+            <div class="modal-content">
+                <div class='pad20'>
+                    <p class='s35'>My Experience</p>
+                    <p class='s13'>Well i haven't much experience in design company, because im just jump to this whole, but im very interest with design, it makes me feel happy while find new things and im desired to be learn it. Designing as hobby, em i think it my passion. I started learn adobe ilustrator about 2020, before that, im using photo editor, picsay, picsart, and many other graphic designing using phone. beside graphic design, i learn too frontend web developer like Javascript, Html, and CSS to make static web and wedding invitation using web. Combinating of graphic design and frontend web, i hope i can find a job include that things.</p>
+                </div>
+                <div class='col'>
+                    <div class='row'>
+                        <img class='image' src='image/hobby.png'>
+                        <img class='image' src='image/hobby.png'>
+                        <img class='image' src='image/hobby.png'>
+                        <img class='image' src='image/hobby.png'>
+                        <img class='image' src='image/hobby.png'>
+                    </div>
+                    <span class='content-text'>There are about my other experience.</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span id='closeit1' class="close">Back</span>
+            </div>
+            </div>
+            <div class="modal2">
+                <div class="modal-content">
+                    <div class='pad20'>
+                        <p class='s35'>My Skills</p>
+                        <p class='s13'></p>
+                        <div class='skill-content'>
+                            Graphic;Web;Lang;Ms
+                        </div>
+                    </div>
+                    <div class='col'>
+                        <div class='row'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                        </div>
+                        <span class='content-text'>I'm ready for the new things.</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <span id='closeit2' class="close">Back</span>
+                </div>
+            </div>
+            <div class="modal3">
+                <div class="modal-content">
+                    <div class='pad20'>
+                        <p class='s35'>My Project</p>
+                        <p class='s13'></p>
+                        <div class='skill-content'>
+                            KangDo, Katalogku, ilustrator, wedding invit
+                        </div>
+                    </div>
+                    <div class='col'>
+                        <div class='row'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                        </div>
+                        <span class='content-text'>I want my hobby become a benefit for my lives and my little families too.</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <span id='closeit3' class="close">Back</span>
+                </div>
+            </div>
+            <div class="modal4">
+                <div class="modal-content">
+                    <div class='pad20'>
+                        <p class='s35'>My Contact</p>
+                        <p class='s13'></p>
+                        <div class='skill-content'>
+                            WA;Email;Telegram;Github;
+                        </div>
+                    </div>
+                    <div class='col'>
+                        <div class='row'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                            <img class='image' src='image/hobby.png'>
+                        </div>
+                        <span class='content-text'>Im ready for the challenge.</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <span id='closeit4' class="close">Back</span>
+                </div>
+            </div>
+        
+        
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"></script> 
+            <script>
+                // When document is ready
+            $(document).ready(function(){
+            $('#submitID').click(
+            function(){
+            $('.modal').css(
+                'height', '100%');
+            });
+            $('#closeit').click(
+            function(){
+            $('.modal').css(
+            'height', '0');
+            })});
+        </script>
+        <script>
+            // When document is ready
+            $(document).ready(function(){
+            $('#submitID1').click(
+            function(){
+            $('.modal1').css(
+                'transform', 'scale(1)');
+            });
+            $('#closeit1').click(
+            function(){
+            $('.modal1').css(
+                'transform', 'scale(0)');
+            })});
+        </script>
+        <script>
+            // When document is ready
+            $(document).ready(function(){
+            $('#submitID2').click(
+            function(){
+            $('.modal2').css(
+                'height', '100%');
+            });
+            $('#closeit2').click(
+            function(){
+            $('.modal2').css(
+                'height', '0');
+            })});
+        </script>
+        <script>
+            // When document is ready
+            $(document).ready(function(){
+            $('#submitID3').click(
+            function(){
+            $('.modal3').css(
+                'width', '100%');
+            });
+            $('#closeit3').click(
+            function(){
+            $('.modal3').css(
+                'width', '0');
+            })});
+        </script>
+        <script>
+            // When document is ready
+            $(document).ready(function(){
+            $('#submitID4').click(
+            function(){
+            $('.modal4').css(
+                'width', '100%');
+            });
+            $('#closeit4').click(
+            function(){
+            $('.modal4').css(
+                'width', '0');
+            })});
+        </script>
+            
+    </body>
+</html>
