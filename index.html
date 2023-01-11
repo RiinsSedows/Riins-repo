@@ -1,268 +1,282 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style type="text/css">
-            @media screen and (max-width: 430px) {
-            div.container{
-                width:100%;
-                max-width:430px;
-                height:170px;
-            }
-            }
-            @media screen and (max-width: 600px),(min-width:440px) {
-            div.container{
-                width:100%;
-                max-width:600px;
-                height:220px;
-            }
-            }
-            @media screen and (min-width: 800px) {
-            div.container{
-                width:100%;
-                max-width:100%;
-                height:330px;
-            }
-            }
-
-            h1, p, h2, h3, h4, h5, h6 {margin:0;}
-            .mnf {font-family:monospace;font-size:70px;}
-            body{background-color:darkslategrey;color:azure;margin:0;}
-            button{cursor: pointer;}
-            .container{width:100%;display:flex;text-align: center;flex-direction: column;justify-content:center;}
-            .navime{width:100%;height:170px;display:flex;justify-items: center;background-image:url(https://www.riins.xyz/images/topper.png);background-size:cover;}
-            .navime2{width:100%;height:100%;display:flex;justify-items: center;}
-            .mid{margin:auto;}
-            button{border:none}
-            .row{display: flex;justify-content: center;flex-direction: row;}
-            .col{display: flex;justify-content: center;flex-direction: column;}
-            .m2{margin:20px;}
-            .right{position:fixed;top:20px;right:20px;display:flex;flex-direction:column;justify-content:center;}
-            .aes-1{margin:10px;padding:5px 10px;background-color: azure;border-radius:10px;color:darkslategrey;cursor: pointer;}
-            .bottom{position:fixed;bottom:0;height:50px;width:100%;display:flex;justify-content:center;}
-            .aes-1:hover{transform: scale(1.1);box-shadow:0 3px 3px #303040 ;background-color: rgb(200,200,200);color:darkslategrey;transition: 0.4s ease;}
-            .aes-1:active{background-color:green;}
-            .showup {position:relative;animation: s-up 0.6s ease;}
-            @keyframes s-up {
-                from{bottom:-100px;}
-                to{bottom:0;}
-            }
-            .showbot {position:relative;animation: s-bot 0.6s ease;}
-            @keyframes s-bot {
-                from{top:-100px;}
-                to{top:0;}
-            }
-            .fade-in{position:relative;animation: fade 0.5s ease;}
-            .fade-in1{position:relative;animation: fade 0.5s ease;animation-delay: 100ms;}
-            .fade-in2{position:relative;animation: fade 0.5s ease;animation-delay: 150ms;}
-            .fade-in3{position:relative;animation: fade 0.5s ease;animation-delay: 250ms;}
-            .fade-in4{position:relative;animation: fade 0.5s ease;animation-delay: 300ms;}
-            .fade-in5{position:relative;animation: fade 0.5s ease;animation-delay: 350ms;}
-
-            @keyframes fade {
-                from{opacity:0}
-                to{opacity: 1;}
-            }
-            h1::first-letter{font-size: 200%;color:rgb(70, 195, 70);}
-            .s11{font-size:11px;}
-            .s13{font-size:13px;}
-            .s16{font-size:16px;}
-            .s20{font-size:20px;}
-            .s25{font-size:25px;}
-            .s35{font-size:35px;}
-            .s45{font-size:45px;}
-            .w80{width:80%;}
-            .pad20{padding:20px;}
-
-            .modal{
-            display: block;
-            position: fixed;
-            z-index: 1;
-            padding-top: 0;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 0;
-            background-color: rgba(0,0,0,0.8);
-            overflow: hidden;
-            transition: 0.7s ease;
-            }
-            .modal4 {
-            display: block;
-            position: fixed;
-            z-index: 1;
-            padding-top: 0;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 0;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-            overflow: hidden;
-            transition: 0.7s ease;
-            }
-            .modal3 {
-            display: block;
-            position: fixed;
-            z-index: 1;
-            padding-top: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: 0;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-            overflow: hidden;
-            transition: 0.7s ease;
-            }
-            .modal2 {
-            display: block;
-            position: fixed;
-            z-index: 1;
-            padding-top: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 0;
-            background-color: rgba(0,0,0,0.8);
-            overflow: hidden;
-            transition: 0.7s ease;
-            }
-            .modal1{
-            display: block;
-            position: fixed;
-            z-index: 1;
-            padding-top: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            transform:scale(0);
-            background-color: rgba(0,0,0,0.8);
-            overflow: hidden;
-            transition: 0.7s ease;
-            }
-
-            .modal-content {
-            background-color: #333;
-            color:white;
-            height:75%;
-            width: 100%;
-            box-shadow: 0 5px 10px rgba(20, 12, 12, 0.8);
-            text-align: center;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            justify-items:center;
-            }
-
-            .modal-footer{height:15%;width:100%;display:flex;justify-content: center;justify-items: center;}
-
-            .close,.close2,.close3,.close4,.close5 {
-            color: #aaaaaa;
-            font-size: 28px;
-            font-weight: bold;
-            margin: auto;
-            background-color:darkslategrey;
-            padding: 5px 13px;
-            border-radius:10px;
-
-            }
-
-            .close:hover,.close2:hover,.close3:hover,.close4:hover,.close5:hover {
-            text-decoration: none;
-            cursor: pointer;
-            transition: 0.1s ease;
-            box-shadow: 0 0 4px rgba(200,200,200,0.8);
-            }
-            @keyframes fade {
-                from{position:relative; top:-100px;opacity: 0;}
-                to{position:relative; top:0;opacity: 1;}
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h2>It will come :)</h2>
+  <meta name='google' content='notranslate'>
+    <title>My-Portofolio</title>
+    <meta name="description" content="Riins" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity=
+"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{box-sizing:border-box;}
+        h1,h2,h3,h4,h5,h6,p{margin:0;}
+        body{background-color:rgb(2, 2, 40);color:azure;margin:0 auto;max-width:700px;width:100%;height:100%;padding:0;}
+        .col{display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;}
+        .row-start{display:flex;justify-content:start;align-items:center;flex-direction:row;text-align:center;}
+        .row{display:flex;justify-content:center;align-items:center;flex-direction:row;text-align:center;}
+        .col-start{display:flex;justify-content:start;align-items:center;flex-direction:column;text-align:center;}
+        #contact{padding:2px 4px;border-radius:10px;}
+        #contact:hover,#contact:active{background-color:darkblue;border-radius:10px;box-shadow:0 0 5px white;transform:scale(1.2);}
+        li{margin:5px;background:linear-gradient(to right, blue, rgb(2, 2, 40));border-radius:4px;padding:2px 6px;width:40%;}
+        li:hover,li:active{background:linear-gradient(to right,rgb(2, 2, 40),blue);}
+        .ready{background:linear-gradient(to right, blue, rgb(2, 2, 40));border-radius:7px;padding:4px 8px;}
+        .web-class{width:100%;padding:30px;margin:70px 0;color:azure;background-color:rgb(10,10,60);border-radius:80px;}
+        .web-title{font-size:300%;margin-left:50px;}
+        .web-title::after{content:" project";color:rgb(94,94,150);font-size:50%;}
+        .des-class{width:100%;padding:30px;margin:70px 0;color:azure;background-color:rgb(10,10,60);border-radius:80px;}
+        .des-title{font-size:300%;margin-left:50px;}
+        .des-title::after{content:" project";color:rgb(94,94,150);font-size:50%;}
+        .btn-1{background-color:rgb(100,100,255);padding:3px 10px;border-radius:10px;color:rgb(3,3,40);text-decoration: none;margin:15px 7px;}
+        .btn-1:hover,.btn-1:active{background-color:white;}
+    </style>
+  </head>
+  <body>
+    <header id='top'>
+        <div style='margin-left:10px;margin-top:20px;display:flex;flex-direction:row;justify-content:start;'>
+            <div>
+                <img src='https://www.riins.xyz/images/me.png' width='70px' height='70px' style='border-radius:100%;border:3px solid blue;'>
+            </div>
+            <div style='margin-left:10px;'>
+                <h1>Hello!</h1>
+                <h3>I'm riins.</h3>
+                <h5>Job seeker from somewhere.</h5>
+            </div>
         </div>
-        <div class="bottom">
-            <div class="mid">
-                |<strong> 2022 </strong>|
+        <br><br>
+        <div class='col'>
+            <div class='row'>
+                <a target="_blank" href='https://wa.me/62882006014023'>
+                    <div id="contact" style='width:40px;'>
+                    <svg fill="azure" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                  </div>
+                  </a>
+                  <a target="_blank" href='mailto:riinssedows@gmail.com'>
+                  <div id="contact" style='width:40px;margin-left:20px;margin-right:20px;'>
+                    <svg fill="azure" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192c0-35.3-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64s64-28.7 64-64z"/></svg>
+                  </div>
+                  </a>
+                  <a target="_blank" href='https://t.me/riins2'>
+                  <div id="contact" style='width:40px;'>
+                    <svg fill="azure" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+                  </div>
+                  </a>
+            </div>
+            <br>
+            <h6 class='ready'>24 hours online</h6>
+        </div>
+        <br>
+    </header>
+    <style>
+        .outer{height:14px;width:200px;padding:2px 2px;margin-left:4px;border:1px solid azure;border-radius:15px;}
+        .inner-1{height:100%;width:130px;background:linear-gradient(to right, rgb(2, 2, 40),orange);border-radius:15px;border-radius:15px;}
+        .inner-2{height:100%;width:110px;background:linear-gradient(to right, rgb(2, 2, 40),orange);border-radius:15px;border-radius:15px;}
+        .inner-3{height:100%;width:40px;background:linear-gradient(to right, rgb(2, 2, 40),orange);border-radius:15px;border-radius:15px;}
+        .inner-4{height:100%;width:150px;background:linear-gradient(to right, rgb(2, 2, 40),green);border-radius:15px;border-radius:15px;}
+        .inner-5{height:100%;width:100px;background:linear-gradient(to right, rgb(2, 2, 40),green);border-radius:15px;border-radius:15px;}
+        .inner-6{height:100%;width:60px;background:linear-gradient(to right, rgb(2, 2, 40),green);border-radius:15px;border-radius:15px;}
+        @keyframes inner1{
+            from{width:0%;}
+            to{width:130px;}
+        }
+        .show1{position:relative;animation: inner1 2s ease;}
+        @keyframes inner2{
+            from{width:0%;}
+            to{width:110px;}
+        }
+        .show2{position:relative;animation: inner2 2s ease;}
+        @keyframes inner3{
+            from{width:0%;}
+            to{width:40px;}
+        }
+        .show3{position:relative;animation: inner3 2s ease;}
+        @keyframes inner4{
+            from{width:0%;}
+            to{width:150px;}
+        }
+        .show4{position:relative;animation: inner4 2s ease;}
+        @keyframes inner5{
+            from{width:0%;}
+            to{width:100px;}
+        }
+        .show5{position:relative;animation: inner5 2s ease;}
+        @keyframes inner6{
+            from{width:0%;}
+            to{width:60px;}
+        }
+        .show6{position:relative;animation: inner6 2s ease;}
+        .score1{margin-left:10px;padding:5px;border-radius:100%;background-color:rgb(2,2,40);border:2px solid orange;height:50px;width:50px;}
+        .score1-in{background-color:azure;border-radius:100%;color:rgb(2,2,40);display:flex;justify-content:center;width:100%;height:100%;align-items:center;}
+        .score2{margin-left:10px;padding:5px;border-radius:100%;background-color:rgb(2,2,40);border:2px solid green;height:50px;width:50px;}
+        .score2-in{background-color:azure;border-radius:100%;color:rgb(2,2,40);display:flex;justify-content:center;width:100%;height:100%;align-items:center;}
+        @keyframes scores1{
+            from{transform:rotate(0deg);opacity:0.5;}
+            to{transform:rotate(360deg);opacity:1;}
+        }
+        .scorea{position:relative;animation:scores1 2s ease;}
+        @keyframes scores2{
+            from{transform:rotate(0deg);opacity:0.5;}
+            to{transform:rotate(360deg);opacity:1;}
+        }
+        .scoreb{position:relative;animation:scores2 2s ease;}
+    </style>
+    <main>
+        <div class='intro'>
+            <ul><h2>What i've do :</h2>
+                <li id="web">Web project</li>
+                <div class='row-start'>
+                    <div class='col-start'>
+                    <div class='row-start'>
+                        <img src="https://img.icons8.com/color/48/null/html-5--v1.png" style='margin-left:8px;width:20px;height:20px;'>
+                        <div class='outer'>
+                            <div class='inner-1 show1'></div>
+                        </div>
+                    </div>
+                    <div class='row-start'>
+                        <img src='https://img.icons8.com/color/48/null/css3.png' style='margin-left:8px;width:20px;height:20px;'>
+                        <div class='outer'>
+                            <div class='inner-2 show2'></div>
+                        </div>
+                    </div>
+                    <div class='row-start'>
+                        <img src='https://img.icons8.com/color/48/null/javascript--v1.png' style='margin-left:8px;width:20px;height:20px;'>
+                        <div class='outer'>
+                            <div class='inner-3 show3'></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class='score1 scorea'><div class='score1-in'>4.6</div></div>
+                </div>
+                <li id="design">Design project</li>
+                <div class='row-start'>
+                    <div class='col-start'>
+                    <div class='row-start'>
+                        <img src='https://img.icons8.com/color/48/null/adobe-illustrator--v1.png' style='margin-left:8px;width:20px;height:20px;'>
+                        <div class='outer'>
+                            <div class='inner-4 show4'></div>
+                        </div>
+                    </div>
+                    <div class='row-start'>
+                        <img src='https://img.icons8.com/color/48/null/adobe-photoshop--v1.png' style='margin-left:8px;width:20px;height:20px;'>
+                        <div class='outer'>
+                            <div class='inner-5 show5'></div>
+                        </div>
+                    </div>
+                    <div class='row-start'>
+                        <img src='https://img.icons8.com/fluency/48/null/coreldraw-2021.png' style='margin-left:8px;width:20px;height:20px;'>
+                        <div class='outer'>
+                            <div class='inner-6 show6'></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class='score2 scoreb'><div class='score2-in'>5.1</div></div>
+                </div>
+            </ul>
+        </div>
+        <div id="web" class="web-class">
+            <h1 class='web-title'>Web</h1>
+            <div class='col'>
+                <img src='https://linkundangan.xyz/images/undangandigital.jpg' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <h4>Undangan digital</h4>
+                <div class='row'>
+                    <a class='btn-1' target='_blank' href='https://linkundangan.xyz/wedding-of-Gino-and-Widi-3Jan23'><span>Lihat undangan</span></a>
+                </div>
+                <img src='https://linkundangan.xyz/images/webkatalog.jpg' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <h4>Web katalog</h4>
+                <div class='row'>
+                    <a class='btn-1' href='seblakcandu.katalogku.web.id' target='_blank'><span>Seblak-candu</span></a>
+                    <a class='btn-1' href='winongabadi.katalogku.web.id' target='_blank'><span>Winong-abadi</span></a>
+                </div>
+                <img src='https://m.media-amazon.com/images/I/81VBi2RDh6L.jpg' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <h4>My blog</h4>
+                <div class='row'>
+                    <a class='btn-1' href='https://linkundangan.xyz' target='_blank'><span>Linkundangan.xyz</span></a>
+                </div>
             </div>
         </div>
 
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"></script> 
-            <script>
-                // When document is ready
-            $(document).ready(function(){
-            $('#submitID').click(
-            function(){
-            $('.modal').css(
-                'height', '100%');
-            });
-            $('#closeit').click(
-            function(){
-            $('.modal').css(
-            'height', '0');
-            })});
+        <div id="des" class="des-class">
+            <h1 class='des-title'>Design</h1>
+            <div class='col'>
+                <img src='https://www.riins.xyz/images/bannerwinong.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/kangdohujan.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/kangdoyummie.jpg' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/seblakbakso.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/seblakceker.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/logoangkringan.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/logochanna.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/logocw.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/logokedai.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/logosigma.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/logowolfie.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+                <img src='https://www.riins.xyz/images/logomedusa.png' width='300px' style='margin:20px;border-radius:20px;box-shadow:0 0 7px black;'>
+            </div>
+        </div>
+        </main>
+        <style>
+            .aboutme{background:linear-gradient(to right, rgb(2,2,40),rgb(40,40,180),rgb(2,2,40));display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30px;}
+            .me{margin-bottom:10px;}
+            .a1{background-color:rgb(235, 61, 61);border-radius:100%;width:10px;height:10px;margin:3px;}
+            .a2{background-color:rgb(238, 238, 56);border-radius:100%;width:10px;height:10px;margin:1px;}
+            .a3{background-color:rgb(65, 239, 65);border-radius:100%;width:10px;height:10px;margin:3px;}
+            .gh{background-color:rgba(2,2,40,0.2);padding:5px 10px;border-radius:10px;}
+            .top{color:white;text-decoration: none;}
+            @keyframes scl1 {
+                0%{left:5px;}
+                50%{left:-5px;width:20px;border-radius:10%;}
+                100%{left:5px;}
+            }
+            @keyframes scl3 {
+                0%{right:5px;}
+                50%{right:-5px;width:20px;border-radius:10%;}
+                100%{right:5px;}
+            }
+            @keyframes scl2 {
+                0%{top:5px;}
+                50%{top:-5px;}
+                100%{top:5px;}
+            }
+            .scale1{position:relative;animation:scl1 2s ease infinite;}
+            .scale2{position:relative;animation:scl2 4s ease infinite;}
+            .scale3{position:relative;animation:scl3 2s ease infinite;}
+            .fa {color:azure;}
+        </style>
+        <footer>
+        <div class='aboutme'>
+            <h1 class='me'>Interest For</h1>
+            <h4>Team Work | Growth Up | Challenge</h4>
+            <br>
+            <div class='row'>
+                <div class='a1 scale1'></div>
+                <div class='a2 scale2'></div>
+                <div class='a3 scale3'></div>
+            </div>
+            <br>
+            <h6 class='gh'>powered by github-page <span class='fa fa-github'></span></h6>
+            <br>
+            <br>
+            <br>
+            <a class='top' href='#top'>Back to top</a>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
         </script>
-        <script>
-            // When document is ready
-            $(document).ready(function(){
-            $('#submitID1').click(
-            function(){
-            $('.modal1').css(
-                'transform', 'scale(1)');
-            });
-            $('#closeit1').click(
-            function(){
-            $('.modal1').css(
-                'transform', 'scale(0)');
-            })});
-        </script>
-        <script>
-            // When document is ready
-            $(document).ready(function(){
-            $('#submitID2').click(
-            function(){
-            $('.modal2').css(
-                'height', '100%');
-            });
-            $('#closeit2').click(
-            function(){
-            $('.modal2').css(
-                'height', '0');
-            })});
-        </script>
-        <script>
-            // When document is ready
-            $(document).ready(function(){
-            $('#submitID3').click(
-            function(){
-            $('.modal3').css(
-                'width', '100%');
-            });
-            $('#closeit3').click(
-            function(){
-            $('.modal3').css(
-                'width', '0');
-            })});
-        </script>
-        <script>
-            // When document is ready
-            $(document).ready(function(){
-            $('#submitID4').click(
-            function(){
-            $('.modal4').css(
-                'width', '100%');
-            });
-            $('#closeit4').click(
-            function(){
-            $('.modal4').css(
-                'width', '0');
-            })});
-        </script>
-            
     </body>
-</html>
+    </html>
