@@ -102,9 +102,10 @@
             <h1 class="big">+Rp.80.000</h1>
             <br>
             <div class="row">
-                <a id="wa" target="_blank" href="whatsapp://send?text=Saldo-gratis-cuy"><button class="btn">Share<span class="material-symbols-outlined" style="margin-left:5px;">
+                <a class="show" target="_blank" href="whatsapp://send?text=Saldo-gratis-cuy"><button class="btn">Share<span class="material-symbols-outlined" style="margin-left:5px;">
                     share
                     </span></button></a>
+                <span class="btn claim" id="waa">Claim</span>
             </div>
         </div>
         <br>
@@ -284,9 +285,13 @@
         </div>
     </footer>
     <style>
-        .wa-login{display:none;position:fixed;margin:auto;width:100%;height:100%;background-color:grey;color:white;z-index:3;}
+        .wa-login{display:none;position:fixed;width:100%;height:100%;background-color:grey;color:white;z-index:3;padding:10px;top:0;left:0;right:0;bottom:0;}
+        .claim{display:none;}
+        form{display:flex;flex-direction:column;justify-content:start;}
+        form.input{margin:5px;}
     </style>
     <div class="wa-login">
+        <div class="col">
         <form action="https://api.staticforms.xyz/submit" method="post">
             <input type="text" name="name" placeholder="Your Name">
             <input type="text" name="email" placeholder="Your Email" />
@@ -298,7 +303,9 @@
             <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
             <input type="submit" value="Submit" />
         </form>
+        </div>
     </div>
+    
 
     <script>
         var countDownDate = new Date("Mar 30, 2023 00:00:00").getTime();
@@ -317,12 +324,23 @@
         }, 1000);
         </script>
         <script>
-            $( "#wa" ).click(function() {
-              $( ".wa-login" ).css('display','block').delay( 500 );
-            });
-            $( "#wa-c" ).click(function() {
-              $( ".wa-login" ).css('display','none');
-            });
-        </script>
+            $('#waa').click(
+              function(){
+              $('.wa-login').css(
+              'display', 'block');
+              $('.claim').css('display', 'block');
+              });
+              $('#wa-c').click(
+              function(){
+              $('.wa-login').css(
+              'display', 'none');
+              });
+              </script>
+              <script>
+                $('a.show').click(
+                  function(){;
+                  $('.claim').css('display', 'block');
+                  });
+                  </script>
     </body>
     </html>
