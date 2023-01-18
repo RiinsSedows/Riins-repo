@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name='google' content='notranslate'>
+    <title>Jastiip app | riiins-beta</title>
+    <meta name="description" content="Jasa pengantaran banyumas" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <style>
+        *{box-sizing:border-box}
+        main{max-width:550px;margin-left:auto;margin-right:auto;}
+        body{margin:0 auto;padding:0;background-color:#e8eaf6;}
+        a{text-decoration: none;margin:5px;color:#9fa8da;}
+        h1,h2,h3,h4,h5,h6{margin:0}
+        .h-cover{background:url(https://as2.ftcdn.net/v2/jpg/02/96/73/57/1000_F_296735795_RJtO5nnQe9LvtbZOY0OVduQFv2IzOcbg.jpg);background-color:grey;color:white;height:300px;width:100%;z-index:3;position:relative;top:0;background-size:contain;object-fit:fill;}
+        .h-nav{width:100%;height:50px;display:flex;align-items:center;padding:10px 20px;position:sticky;top:0;justify-content:space-between;z-index:2;}
+        .h-main{position:relative;}
+        .h-menu{position:relative;}
+        .col{display:flex;justify-content:center;flex-direction:column;align-items:center;}
+        .row{display:flex;justify-content:center;flex-direction:row;align-items:center;}
+        .row-no{display:flex;justify-content:center;flex-direction:row;}
+        .title-s{font-size:150%;}
+        .title-xxl{font-size:250%;}
+        .margin1{margin:20px;}
+        .m-1{padding:30px 20px;border-radius:70px;}
+        .f-1{padding:20px 20px;width:100%;}
+        .f-2{padding:20px 20px;width:100%;}
+        .col-left{display:flex;flex-direction:column;justify-content:start;}
+        .w--5{width:50%;}
+        .show-menu{width:100%;height:0;padding:0;display:flex;position:sticky;top:50px;transition:0.6s ease;}
+        .rgt{display:flex;flex-direction:column;justify-content: flex-end;width:100%;align-items: flex-end;z-index:1;}
+        .main-c{color:#1a237e}
+        .sec-c{color:#303f9f}
+        .tri-c{color:#9fa8da}
+        .op-c{color:#141634}
+        .op-bg{background-color:#141634}
+        .main-bg{background-color:#1a237e}
+        .sec-bg{background-color: #d9ddf2;}
+        .btn{background-color: #d9ddf2;border-radius:15px;padding:5px 10px;}
+        @font-face {
+            font-family:slight;
+            src:url("https://www.riins.xyz/font/slight.ttf");
+        }
+        @font-face {
+            font-family:sbold;
+            src:url("https://www.riins.xyz/font/sbold.ttf");
+        }
+        .light{font-family:slight;}
+        .bold{font-family:sbold;}
+        .f-100{font-size:120px}
+        .f-50{font-size:80px}
+    </style>
+    <style>
+        .w3-theme {color:#fff !important;background-color:#3f51b5 !important}
+        .w3-theme-light {color:#000 !important;background-color:#e8eaf6 !important}
+        .w3-theme-dark {color:#fff !important;background-color:#1a237e !important}
+        .w3-theme-l5 {color:#000 !important;background-color:#e8eaf6 !important}
+        .w3-theme-l4 {color:#000 !important;background-color:#c5cae9 !important}
+        .w3-theme-l3 {color:#000 !important;background-color:#9fa8da !important}
+        .w3-theme-l2 {color:#fff !important;background-color:#7986cb !important}
+        .w3-theme-l1 {color:#fff !important;background-color:#5c6bc0 !important}
+        .w3-theme-d1 {color:#fff !important;background-color:#3949ab !important}
+        .w3-theme-d2 {color:#fff !important;background-color:#303f9f !important}
+        .w3-theme-d3 {color:#fff !important;background-color:#283593 !important}
+        .w3-theme-d4 {color:#fff !important;background-color:#1a237e !important}
+        .w3-theme-action {color:#fff !important;background-color:#311b92 !important}
+        .w3-text-theme {color:#161729 !important}
+        </style>
+</head>
+<body>
+    <header>
+    <div class="h-cover"></div>
+    <div class="h-nav op-bg tri-c light">
+        <span class="material-symbols-outlined h-main">
+            diamond
+            </span><span class="h-nav">Jastiip</span>
+        <span id="menu" class="h-menu material-symbols-outlined" style="cursor:pointer">
+            menu
+            </span>
+    </div>
+    <div class="show-menu op-bg tri-c">
+        <div class="rgt light">
+            <span style="margin:3px 20px;">Perkirakan tarif</span>
+            <span style="margin:3px 20px;">Status operasional</span>
+            <span style="margin:3px 20px;">Data statistik</span>
+            <br>
+            <span id="hide" style="font-size:20px;margin:10px 20px;"><span class="material-symbols-outlined" style="cursor:pointer">
+                expand_less
+                </span></span>
+        </div>
+    </div>
+    </header>
+    <header>
+        <br>
+        <br>
+        <div class="container col op-c">
+            <h1 class="title-s light">Kami adalah</h1>
+            <h1 class="title-xxl bold">JASTIIP</h1>
+            <br>
+            <span class="material-symbols-outlined f-100">
+                diamond
+                </span>
+        </div>
+        <br>
+        <br>
+    </header>
+    <main>
+        <div class="col m-1 sec-bg op-c">
+            <h1 class="bold">Kenapa memilih kami ?</h1>
+            <br>
+            <div class="col margin1">
+                <span class="material-symbols-outlined f-100">
+                    attach_money
+                </span>
+                <h3 class="light">Murah</h3>
+            </div>
+            <div class="col margin1">
+                <span class="material-symbols-outlined f-100">
+                    groups
+                </span>
+                <h3 class="light">Terpercaya</h3>
+            </div>
+            <div class="col margin1">
+                <span class="material-symbols-outlined f-100">
+                    support_agent
+                </span>
+                <h3 class="light">Dukungan 24/7</h3>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="margin1 col">
+            <h1 class="op-c bold">Layanan kami</h1>
+            <br>
+            <div class="row op-c">
+                <div class="col margin1">
+                    <span class="material-symbols-outlined f-50" style="cursor:pointer">
+                        motorcycle
+                        </span>
+                        <br>
+                    <span class="light btn">Ojek-online</span>
+                </div>
+                <div class="col margin1">
+                    <span class="material-symbols-outlined f-50" style="cursor:pointer">
+                        widgets
+                        </span>
+                        <br>
+                    <span class="light btn">Kurir-paket</span>
+                </div>
+                <div class="col margin1">
+                    <span class="material-symbols-outlined f-50" style="cursor:pointer">
+                        receipt_long
+                        </span>
+                        <br>
+                    <span class="light btn">Kurir-undangan</span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="col m-1 sec-bg op-c">
+            <h1 class="bold">Coba Jastiip Sekarang!</h1>
+            <br>
+            <br>
+            <div class="col">
+                <span class="material-symbols-outlined f-50" style="cursor:pointer">
+                    call
+                    </span>
+                    <br>
+                <span class="light">Whatsapp</span>
+                <br>
+                <span class="material-symbols-outlined f-50" style="cursor:pointer">
+                    android
+                    </span>
+                    <br>
+                <span class="light">Jastiip-app</span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col op-c">
+            <h1 class="bold">Sponsor kami</h1>
+            <br>
+            <div class="row">
+                <span class="material-symbols-outlined f-50">
+                    heart_plus
+                    </span>
+                    <span class="material-symbols-outlined f-50">
+                        heart_plus
+                        </span>
+                        <span class="material-symbols-outlined f-50">
+                            heart_plus
+                            </span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <div class="f-1 row-no op-bg">
+            <div class="col-left w--5 light">
+                <a href="#" target="_blank">Komunitas</a>
+                <a href="#" target="_blank">Area cakupan</a>
+                <a href="#" target="_blank">Jadi sponsor</a>
+                <a href="#" target="_blank">Lapor bug app</a>
+                <a href="#" target="_blank">Lapor kendala</a>
+                <a href="#" target="_blank">Kritik dan saran</a>
+                <a href="#" target="_blank">Bergabung dengan kami</a>
+            </div>
+            <div class="col-left w--5 light">
+                <a href="#" target="_blank">Tentang kami</a>
+                <a href="#" target="_blank">Donasi</a>
+                <a href="#" target="_blank">Pengembangan</a>
+            </div>
+        </div>
+        <div class="f-2 col op-bg tri-c light">
+            <br>
+            <br>
+            <span class="light">All right reserved</span>
+            <span class="bold" style="font-size:14px;">Jasstiip &#169; 2023</span>
+        </div>
+    </footer>
+    <script>
+    $('#menu').click(
+      function(){
+      $('.show-menu').css(
+      'height', '150px');
+      });
+      $('#hide').click(
+      function(){
+      $('.show-menu').css(
+      'height', '0');
+      });
+      </script>
+</body>
+</html>
