@@ -1,0 +1,286 @@
+/*DESKTOP*/
+body {
+	background:#eee;
+	color:#000;
+}
+.logodiv{
+	float:left; 
+	margin-top:15px; 
+	margin-left:30px;
+}
+
+.logodiv a img
+{
+	width: 250px;
+}
+.boxprod{
+	background: rgba(100,6,6,.9);
+}
+.broadcast-marquee{
+	background-color:#fe0000;
+	color:#fff;
+}
+.bgdatapasaran{
+	background-color:#e7e7e7; 
+}
+.togelonline-div{
+	background-color: #ae0000; 
+	color: #fff; 
+}
+.togelonline-div-info{
+	color:#f6fff9;
+}
+.piclmd-div{
+	background-color:#ae0000; 
+}
+.piclmd-title{
+	color: #fff; 
+}
+.piclmd-info{
+	color:#f6fff9; 
+}
+.provider{
+	border-bottom:3px #fe0000 solid; 
+	color: #000;
+}
+.metode-text{
+	color: #fff;
+}
+.metode-underline{
+	border-bottom:3px #fe0000 solid; 
+}
+.wapmobile{
+	border:1px #fe0000 solid;  
+	color: #fff;
+	background-color: #fe0000;
+}
+.wapmobile:hover{
+	border:1px #bf0707 solid; 
+	color: #fff;
+	background-color: #bf0707;
+}
+.footer-container{
+	background-color: #a60000;
+	color: #fff;
+}
+.footer-copyright{
+	color:#FFF;
+}
+.footer-copyright-div{
+	padding-top: 10px;
+}
+.footer-copyright-bg{
+    background:#161616;
+}
+.bank-container{
+	background-color: #7d0302;
+}
+#informasi-menu{
+	background-color:#e9e9e9;
+}
+#informasi-content{
+	background-color:#fff; 
+	color: #000;
+}
+#informasi-logo{
+	margin:15px 0px 5px 5px;
+	width: 123px;
+	
+}
+.menuleft > ul li .btn-black
+{
+	color: #000;
+}
+.menuleft > ul li .btn-black:hover{
+   	background-color:#fe0000;
+}
+.menuleft > ul li .btn-black:active{
+    background-color:#fe0000;
+    
+}
+.pointer{
+	color: #000;
+}
+#informasi-content-title{
+	border-bottom:5px #fe0000 solid; 
+}
+#datapasaran-divname{
+	background-color:#1e1709; 
+	border-top:3px #817e76 solid; 
+	border-left:3px #817e76 solid; 
+	border-right:3px #817e76 solid; 
+	color:#fff; 
+}
+#datapasaran-divnomor{
+	background-color:#1e1709; 
+	border-left:3px #817e76 solid; 
+	border-right:3px #817e76 solid;
+	color: #fff;
+}
+#datapasaran-divnomor-text{
+	color:#fff; 
+}
+#datapasaran-date{
+	color:#FFF; 
+	background-color: #fe0100;
+	border-left:3px #817e76 solid; 
+	border-right:3px #817e76 solid; 
+	border-bottom:3px #817e76 solid;
+	border-top:1px #fe0000 solid;
+}
+#kontak-title{
+	background: #000; 
+	border-top:2px #6a6762 solid;
+	border-right:2px #6a6762 solid;
+	border-left:2px #6a6762 solid;
+	color: #fff;
+}
+#kontak-content{
+	background-color:#FFF;
+	color: #000; 
+}
+.panelbg{
+	background:rgba(255,255,255,.3) !important;		
+}
+
+	/* The Close Button (x) */
+	.closebox {
+		position: absolute;
+		top:-10px; right:5px;
+		color: #CCC;
+		font-size: 35px;
+	}
+	.closebox:hover,.close:focus {
+		color: #000;
+		cursor: pointer;
+	}
+	
+	.closepop {
+		position: absolute;
+		top:-23px; right:-16px;
+		font-size: 18px;
+		width:30px;
+		height:30px;
+		background-color:#000;
+		border-radius:50%;
+		border:2px solid #FFF;
+		padding-top:0px;
+	}
+	.closepop:hover,.close:focus {
+		cursor: pointer;
+		background-color:#CCC;
+		color:#000 !important;
+	}
+	 #desktop #msgbox
+	 {
+	  color:#fe0000 !important;  
+	 }
+
+	.prod a
+	{
+		color:inherit;
+	}
+
+	.prod a:hover, .pointer:hover
+	{
+		color:#fe0000;
+	}
+
+
+
+
+
+	/*MOBILE*/
+
+	#mobile {
+  	  background:#eee;
+	}
+	#mobile .logo-div{
+	  margin-top:80px; 
+	  margin-bottom:81px;
+	}
+	#mobile #logo-img{
+	  width: 325px;
+	}
+	#mobile #msgbox{
+	  margin-top: 60px;
+	}
+	#mobile .menubg{
+	  background-image: -moz-linear-gradient( 90deg, rgb(64,64,64) 0%, rgb(51,51,51) 100%);
+	  background-image: -webkit-linear-gradient( 90deg, rgb(64,64,64) 0%, rgb(51,51,51) 100%);
+	  background-image: -ms-linear-gradient( 90deg, rgb(64,64,64) 0%, rgb(51,51,51) 100%);
+	  height: 90px;
+	  width: 25%; border-left:1px solid #555; border-right:1px solid #000; padding-top:14px; text-align:center; cursor: pointer;
+	  float: left;
+	}
+	#mobile #marquee-bg{
+	  background-color:#fe0000;
+  	  color: #fff;
+	}
+	#mobile #header-line{
+	  border-bottom:5px #fe0000 solid;
+	}
+	#mobile .pindah-versi-text{
+	  margin-bottom:10px; 
+	  color: #a87700;
+	}
+	#mobile .datapasaran-title{
+	  text-align: center; 
+	  color: #fe0000; 
+	  font-size: 25px; 
+	  padding-bottom: 20px;
+	}
+	#mobile .datapasaran-title-pasaran{
+	  color:#000; 
+	}
+	#mobile .datapasaran-title-tanggal{
+	  color:#000; 
+	}
+	#mobile .datapasaran-title-result{
+	  color:#fe0000; 
+	}
+	#mobile .pasaran-text{
+	  color:#000; 
+	}
+	#mobile .tanggal-text{
+	  color:#000; 
+	}
+	#mobile .result-text{
+	  color:#fe0000; 
+	}
+	#mobile .keluaran-line{
+	   border-bottom:10px #ffba00 solid;
+	   background-color:#ffffff; 
+	   color: #FFF;
+	}
+	#mobile #keluaran-bottom{
+	   background-color:#fe0000;  
+   	   border-bottom:1px solid #fe0000; 
+	}
+	#mobile .copyright-bg{
+	  background:#fff;
+	  color: #000;
+	  border-top:3px #fe0000 solid;
+	}
+	#mobile .piclmd-div{
+	  background:#ae0000;
+	  width:100%;
+	}
+	#mobile .piclmd-title{
+	  font-size:23px;
+	  color: #fff;
+	  padding:14px 10px 0px 22px; 
+	  font-style:normal;
+	  text-align:center;
+	}
+	#mobile .piclmd-info{
+	  font-size: 15px;
+	  color:#f6fff9; 
+	  padding:0px 10px 10px 22px;
+	  text-align:center;
+	}
+
+	#mobile .borderbottom{
+	    border-bottom:2px solid #c2c2c2;
+	    border-top:2px solid #c2c2c2;
+	}
