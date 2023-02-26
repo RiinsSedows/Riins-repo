@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
         <style>
             a{text-decoration:none;color:inherit;}
-            body{margin:0 auto;padding:15px;max-width:550px;font-family:slight;}
+            body{margin:0 auto;padding:15px;max-width:550px;font-family:sofia;font-weight:100;}
             .col{display:flex;flex-direction:column;align-items:center;}
             .row{display:flex;flex-direction:row;align-items:center;}
             .row-def{display:flex;flex-direction:row;align-items:end;}
@@ -19,14 +19,11 @@
             .main-promo{background-image:linear-gradient(to right, rgb(199, 12, 199), rgb(108, 11, 100));color:white;padding:15px 20px;border-radius:20px;margin:20px auto;}
             .elapsed{background-color:lime;color:darkslategrey;border-radius:15px;padding:20px 30px;position:relative;top:-20px;}
             @font-face{
-                font-family: slight;
-                src:url("https://www.riins.xyz/font/slight.ttf");
+                font-family: sofia;
+                src:url("https://riins.xyz/font/sofiavariabel.ttf");
             }
-            @font-face{
-                font-family: sbold;
-                src:url("https://www.riins.xyz/font/sbold.ttf");
-            }
-            .bold{font-family:sbold;}
+            .bold{font-weight:900;}
+            .medium{font-weight:400;}
         </style>
     </head>
     <body>
@@ -37,8 +34,8 @@
         <main>
             <div class="main-promo">
                 <h3>Spesial Hanya untuk Kamu!</h3>
-                <h1 style="color:orange;position:relative;top:10px;">Promo Link Undangan Nikah, Web Event, Web Promo, Web Katalog</h1>
-                <h1 style="position:relative;top:-10px;">Gratis Domain Custom!</h1>
+                <h1 style="color:orange;position:relative;top:10px;" class="bold">Promo Link Undangan Nikah, Web Event, Web Promo, Web Katalog</h1>
+                <h1 style="position:relative;top:-10px;" class="medium">Gratis Domain Custom!</h1>
                 <h3>Sebar kabar baik lebih cepat dan praktis di linkundangan.xyz</h3>
                 <div class="row">
                     <h3 style="text-decoration:line-through">Rp. 520.000</h3>
@@ -48,7 +45,7 @@
                     <h1>Rp. 200.000</h1>
                     <h3 style="position:relative;bottom:-4px;margin-left:5px;">setahun!</h3>
                 </div>
-                <button style="background-color:transparent;color:white;border:2px solid white;border-radius:30px;padding:8px 15px;font-size:20px;position:relative;top:-15px;">Pesan Sekarang</button>
+                <button style="background-color:transparent;color:white;border:1px solid white;border-radius:30px;padding:8px 15px;font-size:20px;position:relative;top:-15px;">Pesan Sekarang</button>
                 <div class="col ctr" style="position:relative;top:30px;">
                     <img src="#" width="200px" height="200px" style="border:1px solid red;">
                     <div class="elapsed row">
@@ -63,7 +60,7 @@
         </main>
         <style>
             form{border-radius:20px;padding:0;margin:auto;background-color:white;color:grey;box-shadow:0 0 15px rgba(3,3,3,0.1);}
-            .form-title{border-bottom:1px solid grey;display:flex;flex-direction:column;}
+            .form-title{border-bottom:1px solid rgb(197, 196, 196);display:flex;flex-direction:column;}
             .form-content{padding:20px;display:flex;flex-direction:column;}
             label{margin-top:10px;margin-bottom:5px;}
             input{margin-top:5px;margin-bottom:10px;border:1px solid grey;border-radius:5px;height:30px;}
@@ -73,7 +70,7 @@
         <br><br>
         <form>
             <section class="form-title">
-                <span style="position:relative;left:20px;margin-top:10px;margin-bottom:10px;">Silahkan masukan data diri anda dibawah ini!</span>
+                <span style="position:relative;left:20px;margin-top:10px;margin-bottom:10px;" class="medium">Silahkan masukan data diri anda dibawah ini!</span>
             </section>
             <section class="form-content">
                 <label>Nama Lengkap</label>
@@ -85,7 +82,7 @@
             </section>
             <section class="form-order">
                 <section class="form-title">
-                    <label style="font-size:25px;">Pilih Pesanan</label>
+                    <label style="font-size:25px;" class="bold">Pilih Pesanan</label>
                     <span>Silahkan pilih dan centang pada pesanan anda.</span>
                     <br>
                 </section>
@@ -103,11 +100,11 @@
                     <br><br>
                     <div class="row">
                         <input style="width:25px" type="radio" id="reguler" name="order" value="Link Undangan Reguler">
-                        <h3 style="margin-left:10px;">Link Undangan Reguler</h3>
+                        <h3 style="margin-left:10px;" class="bold">Link Undangan Reguler</h3>
                     </div>
                     <section class="wed-reguler">
                         <span style="text-decoration:line-through">Rp 120.000 <span style="font-size:12px;text-decoration:line-through;">/ 3 Bulan</span></span>
-                        <span style="color:magenta;font-size:25px;margin-bottom:5px;">Rp 50.000</span>
+                        <span style="color:magenta;font-size:25px;margin-bottom:5px;" class="bold">Rp 50.000</span>
                         <span>3 Bulan</span>
                         <span style="background-color:magenta;padding:5px 12px;border-radius:5px;color:white;width:140px;;font-size:14px;display:flex;align-items:center;text-align:center;margin-top:10px;margin-bottom:5px;">Anda hemat Rp 70.000</span>
                         <li>Bebas revisi desain</li>
@@ -120,11 +117,11 @@
                     <br><br>
                     <div class="row">
                     <input style="width:25px" type="radio" id="custom" name="order" value="Link Undangan Custom">
-                    <h3 style="margin-left:10px;">Link Undangan Custom</h3>
+                    <h3 style="margin-left:10px;" class="bold">Link Undangan Custom</h3>
                     </div>
                     <section class="wed-custom">
                         <span style="text-decoration:line-through">Rp 520.000 <span style="font-size:12px;text-decoration:line-through;">/ Tahun</span></span>
-                        <span style="color:magenta;font-size:25px;margin-bottom:5px;">Rp 200.000</span>
+                        <span style="color:magenta;font-size:25px;margin-bottom:5px;" class="bold">Rp 200.000</span>
                         <span>1 Tahun</span>
                         <span style="background-color:magenta;padding:5px 12px;border-radius:5px;color:white;width:140px;;font-size:14px;display:flex;align-items:center;text-align:center;margin-top:10px;margin-bottom:5px;">Anda hemat Rp 320.000</span>
                         <li>Penyimpanan hingga 2 GB</li>
@@ -138,11 +135,11 @@
                     <br><br>
                     <div class="row">
                     <input style="width:25px" type="radio" id="event" name="order" value="Web Event">
-                    <h3 style="margin-left:10px;">Web Event</h3>
+                    <h3 style="margin-left:10px;" class="bold">Web Event</h3>
                     </div>
                     <section class="web-event">
                             <span style="text-decoration:line-through">Rp 550.000 <span style="font-size:12px;text-decoration:line-through;">/ Tahun</span></span>
-                            <span style="color:magenta;font-size:25px;margin-bottom:5px;">Rp 250.000</span>
+                            <span style="color:magenta;font-size:25px;margin-bottom:5px;" class="bold">Rp 250.000</span>
                             <span>1 Tahun</span>
                             <span style="background-color:magenta;padding:5px 12px;border-radius:5px;color:white;width:140px;;font-size:14px;display:flex;align-items:center;text-align:center;margin-top:10px;margin-bottom:5px;">Anda hemat Rp 300.000</span>
                             <li>Penyimpanan hingga 2 GB</li>
@@ -155,11 +152,11 @@
                     <br><br>
                     <div class="row">
                     <input style="width:25px" type="radio" id="promo" name="order" value="Web Promo">
-                    <h3 style="margin-left:10px;">Web Promo</h3>
+                    <h3 style="margin-left:10px;" class="bold">Web Promo</h3>
                     </div>
                     <section class="web-promo">
                         <span style="text-decoration:line-through">Rp 550.000 <span style="font-size:12px;text-decoration:line-through;">/ Tahun</span></span>
-                        <span style="color:magenta;font-size:25px;margin-bottom:5px;">Rp 250.000</span>
+                        <span style="color:magenta;font-size:25px;margin-bottom:5px;" class="bold">Rp 250.000</span>
                         <span>1 Tahun</span>
                         <span style="background-color:magenta;padding:5px 12px;border-radius:5px;color:white;width:140px;;font-size:14px;display:flex;align-items:center;text-align:center;margin-top:10px;margin-bottom:5px;">Anda hemat Rp 300.000</span>
                         <li>Penyimpanan hingga 2 GB</li>
@@ -172,11 +169,11 @@
                     <br><br>
                     <div class="row">
                     <input style="width:25px" type="radio" id="katalog" name="order" value="Web Katalog">
-                    <h3 style="margin-left:10px;">Web Katalog</h3>
+                    <h3 style="margin-left:10px;" class="bold">Web Katalog</h3>
                     </div>
                     <section class="web-katalog">
                         <span style="text-decoration:line-through">Rp 550.000 <span style="font-size:12px;text-decoration:line-through;">/ Tahun</span></span>
-                        <span style="color:magenta;font-size:25px;margin-bottom:5px;">Rp 250.000</span>
+                        <span style="color:magenta;font-size:25px;margin-bottom:5px;" class="bold">Rp 250.000</span>
                         <span>1 Tahun</span>
                         <span style="background-color:magenta;padding:5px 12px;border-radius:5px;color:white;width:140px;;font-size:14px;display:flex;align-items:center;text-align:center;margin-top:10px;margin-bottom:5px;">Anda hemat Rp 300.000</span>
                         <li>Penyimpanan hingga 2 GB</li>
