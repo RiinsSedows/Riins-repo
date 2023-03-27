@@ -24,26 +24,26 @@
         .big{font-weight:800;}
         *{box-sizing:border-box;}
         h1,h2,h3,h4,h5,h6,p{margin:0;}
-        body{background-color:rgb(2, 2, 40);color:azure;margin:0 auto;max-width:700px;width:100%;height:100%;padding:0;font-family:dosis;font-weight:250;}
+        body{background-color:rgb(2, 2, 40);color:azure;margin:0 auto;max-width:700px;width:100%;height:100%;padding:0;font-family:dosis;font-weight:250;transition:0.4s ease-out}
         .col{display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;}
         .row-start{display:flex;justify-content:start;align-items:center;flex-direction:row;text-align:center;}
         .row{display:flex;justify-content:center;align-items:center;flex-direction:row;text-align:center;}
         .row-menu{display:flex;justify-content:center;align-items:center;flex-direction:row;}
         .col-start{display:flex;justify-content:flex-start;align-items:flex-start;flex-direction:column;text-align:left;}
-        body{background-color:white;color:rgb(26, 24, 24);margin-left:auto;margin-right:auto;max-width:550px;overflow-x:hidden;}
-        .dark{background-color:rgb(42, 42, 42);border-radius:10px;padding:20px 10px;box-shadow:0 0 30px white;border-inline: #ff9368 14px solid;}
+        body{background-color:white;color:rgb(26, 24, 24);margin-left:auto;margin-right:auto;max-width:550px;overflow-x:hidden;font-weight:400}
         .margin1{margin:15px;}
         a{text-decoration:none;color:inherit;}
         .main-bg {color:#000 !important; background-color:#fff7f4 !important}
-        .w3-theme-l4 {color:#000 !important; background-color:#ffe4d9 !important}
-        .w3-theme-l3 {color:#000 !important; background-color:#ffc9b4 !important}
-        .w3-theme-l2 {color:#000 !important; background-color:#ffae8e !important}
-        .w3-theme-l1 {color:#000 !important; background-color:#ff9368 !important}
-        .w3-theme-d1 {color:#fff !important; background-color:#ff6122 !important}
-        .w3-theme-d2 {color:#fff !important; background-color:#ff4a02 !important}
-        .w3-theme-d3 {color:#fff !important; background-color:#e14000 !important}
-        .w3-theme-d4 {color:#fff !important; background-color:#c13700 !important}
-        .w3-theme-d5 {color:#fff !important; background-color:#a12e00 !important}
+        .w3-theme-l5 {color:#000 !important; background-color:#fcfdf3 !important}
+            .w3-theme-l4 {color:#000 !important; background-color:#f5f8d7 !important}
+            .w3-theme-l3 {color:#000 !important; background-color:#eaf1af !important}
+            .w3-theme-l2 {color:#000 !important; background-color:#e0ea87 !important}
+            .w3-theme-l1 {color:#000 !important; background-color:#d6e35f !important}
+            .w3-theme-d1 {color:#000 !important; background-color:#c1d325 !important}
+            .w3-theme-d2 {color:#fff !important; background-color:#acbb21 !important}
+            .w3-theme-d3 {color:#fff !important; background-color:#96a41d !important}
+            .w3-theme-d4 {color:#fff !important; background-color:#818c19 !important}
+            .w3-theme-d5 {color:#fff !important; background-color:#6b7515 !important}
         .main-c{color:#a12e00}
         .sec-c{color:#db6130}
         .tri-c{color:#ffc9b4}
@@ -52,26 +52,26 @@
     </style>
   </head>
   <body>
-    <div style="display:flex;justify-content:space-between;flex-direction:row;width:100%;padding:5px 10px;">
-        <div>
-            <span>Menu</span>
+    <div style="display:flex;justify-content:space-between;flex-direction:row;width:100%;padding:20px 10px;">
+        <div style="position:relative;left:0;">
+            <span id="menu" class="bi-whatsapp"><span class="bi-telegram" style="margin:5px;"><span class="bi-github" style="margin-left:5px;"></span></span></span>
         </div>
         <div>
-            <span class="bi-whatsapp"><span class="bi-telegram" style="margin:5px;"><span class="bi-github" style="margin-left:5px;"></span></span></span>
+            <span class="change">Night Mode</span>
         </div>
     </div>
-    <div style="margin:10px auto;background-color:#fff7f4;border-radius:10px;;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:250px !important;width:360px !important;z-index:1;">
+    <div style="margin:10px auto;background-color:#c1d325;border-radius:10px;;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:300px !important;width:360px !important;z-index:1;">
         <br>
-        <span style="font-size:100px;font-weight:900;font-family:'Arial Narrow Bold', sans-serif;color:#a12e00;position:relative;right:-30px;">R<span style="font-size:20px;font-weight:150;color:#ff4a02;position:relative;left:-60px;">NZH 2.0</span></span>
+        <span style="font-size:100px;font-weight:900;font-family:'Arial Narrow Bold', sans-serif;color:black;position:relative;right:-30px;">R<span style="font-size:20px;font-weight:150;color:#ff4a02;position:relative;left:-60px;">NZH 2.0</span></span>
         
-        <span style="display:flex;flex-direction:row;text-align:center;justify-content:center;width:200px;background-color:#ffe4d9;padding:5px 10px;margin:10px auto;">
+        <span style="display:flex;flex-direction:row;text-align:center;justify-content:center;width:200px;background-color:#818c19;color:white;padding:5px 10px;margin:10px auto;">
         <a href="https://www.riins.xyz/index-r" target="boxme">Web based portofolio</a><span id="expand" style="position:relative;right:-20px;;" class="bi-list"></span></span>
-        <div id="expandmenu" style="position:relative;margin:-15px auto;width:200px;display:flex;flex-direction:column;justify-content:flex-start;background-color:#ffc9b4;padding:0 0 10px 0;top:-200px;opacity:0;transition:0.4s">
-            <a href="https://www.riins.xyz/jastip" target="boxme">Promotion Web</a>
-            <a href="https://www.linkundangan.xyz" target="boxme">Events Web</a>
-            <a href="https://www.riins.xyz/index-r" target="boxme">Landing Web</a>
-            <a href="https://www.riins.xyz/index-r" target="boxme">Invitational Web</a>
-        </div>
+            <div id="expandmenu" style="position:relative;margin:-15px auto;width:200px;display:flex;flex-direction:column;justify-content:flex-start;background-color:#818c19;color:white;;padding:0;height:0;;transition:0.4s;visibility:hidden;">
+                <a href="https://www.riins.xyz/jastip" target="boxme">Promotion Web</a>
+                <a href="https://www.linkundangan.xyz" target="boxme">Events Web</a>
+                <a href="https://www.riins.xyz/index-r" target="boxme">Landing Web</a>
+                <a href="https://www.riins.xyz/index-r" target="boxme">Invitational Web</a>
+            </div>
     </div>
     <div class="row-start" style="position:relative;max-width:550px;bottom:-42px;left:20px;">
         <div style="width:10px;height:10px;border-radius:100%;background-color:rgb(240, 97, 97);margin:2px;"></div>
@@ -79,42 +79,34 @@
         <div style="width:10px;height:10px;border-radius:100%;background-color:rgb(111, 242, 111);margin:2px;"></div>
     </div>
     <div class="col" style="padding:15px;">
-    <div style="margin:40px auto 0 auto;padding:0;height:1080px;width:100%;max-width:550px;overflow-y:hidden;border-radius:20px;box-shadow:0 2px 4px rgba(100,100,100,0.2);background-color:#fff7f4;">
+    <div style="margin:40px auto 0 auto;padding:0;height:1080px;width:100%;max-width:550px;overflow-y:hidden;border-radius:20px;;background-color:black;">
 
         <iframe name="boxme" src="https://www.riins.xyz" frameborder="none" style="width:100%;height:100%;margin:0;padding:10px;border-radius:20px;"></iframe>
     </div>
     </div>
-    <div class="col" style="padding:15px;margin:20px auto;">
-        <div style="width:300px;height:300px;border-radius:15px;margin:15px auto;border:1px solid #ffe4d9;background:url(./images/responsive.jpg);background-size:100% 100%;background-blend-mode:luminosity !important;" class="bg-blend">
+    <div class="col" style="padding:15px;margin:20px auto;height:900px">
+        <div style="width:300px;height:300px;border-radius:15px;margin:15px auto;background:url(./images/responsive.jpg);background-size:100% 100%;background-blend-mode:luminosity;" class="bg-blend">
         </div>
         <div class="row-start">
-             <h1 style="color:#ff6122;">R<h2 style="color:inherit;position:relative;bottom:-3px;font-weight:200">esponsive</h2></h1>
+             <h1 style="color:#c1d325;">R<h1 style="color:inherit;font-weight:200">esponsive</h1></h1>
         </div>
         <h5 style="font-weight:200;">Web designed both for mobile and dekstop compatible view</h5>
     </div>
-    <div class="col" style="padding:15px;margin:20px auto;">
-        <div style="width:300px;height:300px;border-radius:15px;margin:15px auto;border:1px solid #ffe4d9;background:url(./images/responsive.jpg);background-size:100% 100%;background-blend-mode:luminosity !important;" class="bg-blend">
+    <div class="col" style="padding:15px;margin:20px auto;height:900px">
+        <div style="width:300px;height:300px;border-radius:15px;margin:15px auto;background:url(./images/responsive.jpg);background-size:100% 100%;background-blend-mode:luminosity;" class="bg-blend">
         </div>
         <div class="row-start">
-             <h1 style="color:#ff6122;">F<h2 style="color:inherit;position:relative;bottom:-3px;font-weight:200">ree Hosting</h2></h1>
+             <h1 style="color:#c1d325;">F<h1 style="color:inherit;font-weight:200">ree Hosting</h1></h1>
         </div>
         <h5 style="font-weight:200;">Feel the basic pricing with free subdomain and cpanel ready</h5>
     </div>
-    <div class="col" style="padding:15px;margin:20px auto;">
-        <div style="width:300px;height:300px;border-radius:15px;margin:15px auto;border:1px solid #ffe4d9;background:url(./images/responsive.jpg);background-size:100% 100%;background-blend-mode:luminosity !important;" class="bg-blend">
+    <div class="col" style="padding:15px;margin:20px auto;height:900px">
+        <div style="width:300px;height:300px;border-radius:15px;margin:15px auto;;background:url(./images/responsive.jpg);background-size:100% 100%;background-blend-mode:luminosity;" class="bg-blend">
         </div>
         <div class="row-start">
-             <h1 style="color:#ff6122;">W<h2 style="color:inherit;position:relative;bottom:-3px;font-weight:200">ordpress Support</h2></h1>
+             <h1 style="color:#c1d325;">W<h1 style="color:inherit;font-weight:200">ordpress Support</h1></h1>
         </div>
         <h5 style="font-weight:200;">Free building web with elementor pro included</h5>
-    </div>
-    <div class="col" style="padding:15px;margin:20px auto;">
-        <div style="width:300px;height:300px;border-radius:15px;margin:15px auto;border:1px solid #ffe4d9;background:url(./images/responsive.jpg);background-size:100% 100%;background-blend-mode:luminosity !important;" class="bg-blend">
-        </div>
-        <div class="row-start">
-             <h1 style="color:#ff6122;">D<h2 style="color:inherit;position:relative;bottom:-3px;font-weight:200">esign As You Want</h2></h1>
-        </div>
-        <h5 style="font-weight:200;">Fully customized web view with sass theming</h5>
     </div>
     <br><br>
     <div class="row-start" style="margin-left:15px;margin-bottom:15px;">
@@ -123,44 +115,44 @@
     </div>
     <div class="row-start" style="margin-left:15px;">
         <span>Burger</span>
-        <div style="display:flex;flex-direction:row;padding:2px;border-radius:5px;width:200px;height:10px;background-color:#ffc9b4;margin:auto 10px;"><div style="display:inline-flex;flex-direction:row;background-color:#ff6122;width:100px;border-radius:5px;"></div></div>
+        <div style="display:flex;flex-direction:row;padding:2px;border-radius:5px;width:200px;height:10px;background-color:#e0ea87;margin:auto 10px;"><div style="display:inline-flex;flex-direction:row;background-color:#c1d325;width:100px;border-radius:5px;"></div></div>
     </div>
     <div class="row-start" style="margin-left:15px;">
         <span>Coffee</span>
-        <div style="display:flex;flex-direction:row;padding:2px;border-radius:5px;width:200px;height:10px;background-color:#ffc9b4;margin:auto 10px;"><div style="display:inline-flex;flex-direction:row;background-color:#ff6122;width:100px;border-radius:5px;"></div></div>
+        <div style="display:flex;flex-direction:row;padding:2px;border-radius:5px;width:200px;height:10px;background-color:#e0ea87;margin:auto 10px;"><div style="display:inline-flex;flex-direction:row;background-color:#c1d325;width:100px;border-radius:5px;"></div></div>
     </div>
     <br><br>
-    <div style="margin:10px auto 10px auto;border-radius:10px;width:400px;height:300px !important;overflow-y:scroll;padding:10px;box-shadow:0 2px 4px #ffe4d9;">
-        <div style="height:100%;width:100%;padding:0;margin:0;">
-            <div class="row-start" style="border-bottom:1px solid #ffe4d9;margin:15px auto;padding:10px">
+    <div style="margin:10px auto 10px auto;border-radius:10px;width:400px;height:300px !important;overflow-y:scroll;padding:10px;box-shadow:0 2px 4px #f5f8d7;background-color:rgb(33,33,33);">
+        <div style="height:100%;width:100%;padding:0;margin:0;color:#f5f8d7">
+            <div class="row-start" style="border-bottom:1px solid #c1d325;margin:15px auto;padding:10px">
                 <span>Profile</span>
                 <div class="col-start" style="padding-left:15px;">
                     <span>Coment</span>
                     <span><i>Comentator</i></span>
                 </div>
             </div>
-            <div class="row-start" style="border-bottom:1px solid #ffe4d9;margin:15px auto;padding:10px">
+            <div class="row-start" style="border-bottom:1px solid #c1d325;margin:15px auto;padding:10px">
                 <span>Profile</span>
                 <div class="col-start" style="padding-left:15px;">
                     <span>Coment</span>
                     <span><i>Comentator</i></span>
                 </div>
             </div>
-            <div class="row-start" style="border-bottom:1px solid #ffe4d9;margin:15px auto;padding:10px">
+            <div class="row-start" style="border-bottom:1px solid #c1d325;margin:15px auto;padding:10px">
                 <span>Profile</span>
                 <div class="col-start" style="padding-left:15px;">
                     <span>Coment</span>
                     <span><i>Comentator</i></span>
                 </div>
             </div>
-            <div class="row-start" style="border-bottom:1px solid #ffe4d9;margin:15px auto;padding:10px">
+            <div class="row-start" style="border-bottom:1px solid #c1d325;margin:15px auto;padding:10px">
                 <span>Profile</span>
                 <div class="col-start" style="padding-left:15px;">
                     <span>Coment</span>
                     <span><i>Comentator</i></span>
                 </div>
             </div>
-            <div class="row-start" style="border-bottom:1px solid #ffe4d9;margin:15px auto;padding:10px">
+            <div class="row-start" style="border-bottom:1px solid #c1d325;margin:15px auto;padding:10px">
                 <span>Profile</span>
                 <div class="col-start" style="padding-left:15px;">
                     <span>Coment</span>
@@ -169,30 +161,87 @@
             </div>
         </div>
     </div>
-    <div style="margin:10px auto;border-radius:10px;width:400px;padding:0;box-shadow:0 2px 4px #ffe4d9;">
-        <h4 style="text-align:right;background-color:#ffe4d9;padding:7px 14px;width:200px;;position:relative;float:right;border-radius:0 10px 0 70px;">Submit your comment</h4>
+    <div class="d-bg" style="margin:30px auto;border-radius:10px;width:400px;padding:0;box-shadow:0 2px 4px #f5f8d7;;">
+        <h4 style="text-align:right;background-color:#c1d325;padding:7px 14px;width:200px;;position:relative;float:right;border-radius:0 10px 0 70px;">Submit your comment</h4>
         <div class="col-start" style="padding:10px;">
             <label style="margin:5px 0;;font-weight:350">Name</label>
-            <input name="name" type="text" style="height:30px;background-color:#ffe4d9;border:none;border-radius:10px;">
+            <input name="name" type="text" style="height:30px;background-color:#fcfdf3;border:none;border-radius:10px;">
             <br>
             <label style="margin:5px 0;font-weight:350">Comment</label>
-            <textarea rows="3" name="name" type="text" style="height:60px;width:350px;background-color:#ffe4d9;border:none;border-radius:10px;"></textarea>
+            <textarea rows="3" name="name" type="text" style="height:60px;width:350px;background-color:#fcfdf3;border:none;border-radius:10px;"></textarea>
             <br>
-            <input type="submit" value="Post Comment" style="border:none;padding:10px 20px;background-color:#ffe4d9;color:#ff6122;border-radius:15px;">
+            <input type="submit" value="Post Comment" style="border:none;padding:10px 20px;background-color:#fcfdf3;color:black;border-radius:15px;">
         </div>
     </div>
     <br><br><br><br><br>
-    <div style="border-bottom:1px solid #ffe4d9;width:70%;margin:auto;"></div>
+    <div style="border-bottom:1px solid #c1d325;width:70%;margin:auto;"></div>
     <br><br><br><br><br>
         <div class="col">
             <span><b>RNZH2.0</b></span>
         </div>
         <br><br><br><br><br><br>
+        <div id="menuleft">
+            <br>
+            <div class="col-start">
+            <span>Github</span>
+            <span>Facebook</span>
+            <span>Whatsapp</span>
+            <span>Telegram</span>
+            <span>Email</span>
+            </div>
+            <div>
+            <span id="menuclose">Close</span>
+            </div>
+            <br>
+        </div>
     <script>
         $(document).ready(function() {
             $('#expand').click(function(){
-                $('#expandmenu').css('top', '0').css('opacity', '1');
+                $('#expandmenu').css('height', '100%').css('visibility', 'visible');
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#menu').click(function(){
+                $('#menuleft').css('left', '0').css('visibility', 'visible');
+            });
+            $('#menuclose').click(function(){
+                $('#menuleft').css('left', '-199px').css('visibility', 'hidden');
+            });
+        });
+    </script>
+    <style>
+        #menuleft{
+            width:40%;
+            height:100%;
+            position:fixed;
+            left:-199px;top:0;bottom:0;padding:10px;
+            background-color:rgb(77,77,77);
+            color:white;
+            transition:0.5s ease;
+            visibility:hidden;
+            display:flex;flex-direction:column;
+            justify-content:space-between;
+        }
+        .change{
+            border:#c1d325 solid 1px;;
+            padding:2px 14px;
+            border-radius:20px;
+            background-color:rgba(33,33,33,0.1);
+        }
+        .black{background-color:rgb(28, 28, 28);
+        color:white;transition:0.4s ease-out} 
+    </style>
+    <script>
+        $('.change').on('click', function() {
+            if( $('body').hasClass('black')) {
+                $('body').removeClass('black');
+                $('.change').text('Night Mode');
+            } else {
+                $('body').addClass('black');
+                $('.change').text('Day Mode');
+            }
         });
     </script>
   </body>
