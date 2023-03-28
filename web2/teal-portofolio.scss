@@ -1,0 +1,342 @@
+// Introduction of restyling !important
+// d = mean DARK
+// l = mean LIGHT
+// m = mean MAIN (theming color)
+// use - to identify separate selectors
+// // // /// // // // // //
+
+// LETS COLOR //
+//block object div span
+//dark-d-white-text
+$d100: #004a43;
+$d80: #005950;
+$d60:#00685d;
+$d40: #00766a;
+$d20: #008578;
+$d10:#00dcc6;
+$white: #fff;
+//light-d-black-color
+$l100:#e9fffd;
+$l80:#b7fff8;
+$l60:#6efff1;
+$l40:#26ffe9;
+$black:#000;
+
+
+//thema
+//light //use color:$black
+$background-l:#e9fffd;
+//dark //use color:$white
+$background-d:#004a43;
+//main // use color:$white;
+$background-m:#009688;
+$text-m:#009688;
+$border-m:#009688;
+//button //use color:$white
+$action-bg:#004a43;
+
+// CUSTOMIZING //
+$pad-1: 4px 8px;
+$pad-2: 20px 20px;
+$margin-def:20px auto;
+$bord-1: 2px solid #009688;
+$round-rect:0px;
+$round-small: 5px;
+$round-medium: 15px;
+$round-large: 25px;
+
+// Font size //paragraf
+$s30:30px;
+$s20:20px;
+$s18:18px;
+$s16:16px;
+$s14:14px;
+$s12:12px;
+$s-def:14px;
+$font-def:slight;
+$font-weight-def:300;
+$font-bold:800;
+$font-thin:200;
+$font-medium:500;
+$default-indent-par:15px;
+$box-shadow-def:10px 20px 50px rgba(0,0,0,0.08);
+
+// hover-anim
+$btn-hover-anim:click 0.4s ease;
+
+@keyframes click {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 4px $text-m;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+a {
+    color: $text-m
+}
+
+p {
+    text-indent: $default-indent-par;
+}
+
+h1 {
+    font-size: $s30;
+}
+
+h2 {
+    font-size: $s20;
+}
+
+h3 {
+    font-size: $s18;
+}
+
+h4 {
+    font-size: $s16;
+}
+
+h5 {
+    font-size: $s14;
+}
+
+h6 {
+    font-size: $s12;
+}
+
+.bold{font-weight:$font-bold}
+.medium{font-weight:$font-medium}
+.thin{font-weight:$font-thin}
+.box-sh{box-shadow: $box-shadow-def;}
+
+body {
+    margin: 0 auto;
+    padding: 5px 10px;
+    background: $background-l;
+    color: $black;
+    transition: 0.5s ease-in;
+    font-size: $s-def;
+    font-family: $font-def;
+    font-weight: $font-weight-def;
+}
+
+span {
+    font-size: $s-def;
+}
+
+.rect {
+    border-radius: $round-rect !important;
+}
+
+.round-small{border-radius:$round-small !important}
+.round-medium{border-radius:$round-medium !important}
+.round-large{border-radius:$round-large !important}
+
+.margin10 {
+    margin: $margin-def;
+}
+.main-c{color:$text-m}
+.dark-c{color:$action-bg}
+.border-left-point{border-left:10px solid $text-m;padding-left:12px;}
+
+
+.nav:hover, .nav:active{
+    background: $d10;
+    color:$white;
+    border-radius:$round-rect;
+    margin:0;
+    height:100%;
+    width:100%;
+    cursor: pointer;
+}
+
+button:hover:active {
+    background: $background-m;
+    color: $white;
+    position: relative;
+    animation: $btn-hover-anim;
+}
+
+.def {
+    padding: $pad-1;
+    background: $action-bg;
+    color: $white;
+    border: $bord-1;
+    border-radius: $round-medium;
+    text-align: center;
+}
+
+
+.act-cta{background-color:$l100;color:$text-m;padding:4px 7px;border-radius:$round-small;}
+.soft-cta{background-color:$l80;color:$text-m;padding:$pad-1;border-radius:$round-small;}
+.border-img{border: 6px solid $text-m}
+
+//toggle switch
+.wraper-btn{
+    width:25px;
+    height:25px;
+    display:flex;
+    border-radius:100%;
+    background-color:$l40;
+    transition:1s ease;
+}
+.day{
+    border:8px solid $d100;
+    transition:1s ease;
+}
+
+
+.login {
+    padding: $pad-1;
+    background: #15cb08;
+    color: $white;
+    border-radius: $round-small;
+    text-align: center;
+    border: none;
+}
+
+.register {
+    padding: $pad-1;
+    background: #ee4747;
+    color: $white;
+    border-radius: $round-small;
+    text-align: center;
+    border: none;
+}
+
+// form
+input {
+    .text {
+        padding: $pad-1;
+        border: $bord-1;
+        border-radius: $round-small;
+        background: $white;
+        color: $black;
+    }
+
+    .send {
+        padding: $pad-1;
+        border-radius: $round-small;
+        background: $background-m;
+        color: $white;
+    }
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-col-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.flex-row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.flex-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin:0;
+}
+
+
+.d10 {
+    background-color: $d10;
+    color: $white;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
+
+.d20 {
+    background-color: $d20;
+    color: $white;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
+
+.d40 {
+    background-color: $d40;
+    color: $white;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
+
+.d60 {
+    background-color: $d60;
+    color: $white;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
+
+.d80 {
+    background-color: $d80;
+    color: $white;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
+
+.d100 {
+    background-color: $d100;
+    color: $white;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
+
+.l40 {
+    background-color: $l40;
+    color: $black;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
+
+.l60 {
+    background-color: $l60;
+    color: $black;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
+
+.l80 {
+    background-color: $l80;
+    color: $black;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
+
+.l100 {
+    background-color: $l100;
+    color: $black;
+    padding: $pad-2;
+    border-radius: $round-medium;
+}
