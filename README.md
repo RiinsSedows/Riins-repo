@@ -1,5 +1,4 @@
-hi, i'm RiinsSedows.
-You can call me Riins.
+Web enthusiasthic
 
 <!---
 RiinsSedows/RiinsSedows is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
