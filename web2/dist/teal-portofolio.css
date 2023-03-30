@@ -150,6 +150,15 @@ button:hover:active {
   border: 6px solid #009688;
 }
 
+.act-cta:hover, .act-cta:active, .soft-cta:hover, .act-cta:active {
+  animation: click 0.4s ease;
+}
+
+img.hover-img:hover, img.hover-img:active {
+  mix-blend-mode: normal;
+  position: relative;
+}
+
 .wraper-btn {
   width: 25px;
   height: 25px;

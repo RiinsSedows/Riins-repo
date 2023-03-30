@@ -177,6 +177,8 @@ button:hover:active {
 .act-cta{background-color:$l100;color:$text-m;padding:4px 7px;border-radius:$round-small;}
 .soft-cta{background-color:$l80;color:$text-m;padding:$pad-1;border-radius:$round-small;}
 .border-img{border: 6px solid $text-m}
+.act-cta:hover,.act-cta:active, .soft-cta:hover,.act-cta:active{animation:$btn-hover-anim;}
+img.hover-img:hover, img.hover-img:active{mix-blend-mode:normal;position:relative;}
 
 //toggle switch
 .wraper-btn{

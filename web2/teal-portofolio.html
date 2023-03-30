@@ -186,9 +186,10 @@
                         <span class="d10" style="position:relative;left:-110px;top:-20px;border-radius:25px 0 50px 0">Nomor</span>
                         <img src="https://cdn-icons-png.flaticon.com/512/1782/1782886.png" style="width:100px;height:100px;margin:10px auto;">
                         <span style="margin:10px auto;">081234567890</span>
+                        <input type="text" value="081234567890" id="phoneCOPY" style="display:none">
                         <div class="flex-row">
-                            <a href="tel:6287825322716"><span style="margin:10px 5px" class="soft-cta">Panggil</span></a>
-                            <span style="margin:10px 5px" class="soft-cta">Salin</span>
+                            <a class="soft-cta" href="tel:6287825322716"><span style="margin:10px 5px">Panggil</span></a>
+                            <span onclick="copyPhone()" style="margin:10px 5px" class="soft-cta">Salin</span>
                         </div>
                     </div>
                 </div>
@@ -198,9 +199,10 @@
                         <img src="https://cdn-icons-png.flaticon.com/512/1377/1377218.png" style="width:100px;height:100px;;margin:10px auto;">
                         <span style="margin:10px auto;">081234567890</span>
                         <div class="flex-row">
-                            <a href="https://wa.me/6287825322716"><span style="margin:10px 5px" class="soft-cta">Kirim 
+                            <input type="text" value="https://wa.me/6281234567890" id="waCOPY" style="display:none">
+                            <a class="soft-cta" href="https://wa.me/6281234567890"><span style="margin:10px 5px">Kirim 
                             Pesan</span></a>
-                            <span style="margin:10px 5px" class="soft-cta">Salin</span>
+                            <span onclick="copyWA()" style="margin:10px 5px" class="soft-cta">Salin</span>
                         </div>
                     </div>
                 </div>
@@ -209,10 +211,11 @@
                         <span class="d10" style="position:relative;left:-111px;top:-20px;border-radius:24px 0 50px 0">E-Mail</span>
                         <img src="https://cdn-icons-png.flaticon.com/512/893/893247.png" style="width:100px;height:100px;margin:10px auto;">
                         <span style="margin:10px auto;">bastian1212example@gmail.com</span>
+                        <input type="text" value="bastian1212example@gmail.com" id="mailCOPY" style="display:none">
                         <div class="flex-row">
-                            <a href="bastian1212example@gmail.com"><span style="margin:10px 5px" class="soft-cta">Kirim 
+                            <a class="soft-cta" href="mailto:bastian1212example@gmail.com"><span style="margin:10px 5px">Kirim 
                             Mail</span></a>
-                            <span style="margin:10px 5px" class="soft-cta">Salin</span>
+                            <span onclick="copyMail()" style="margin:10px 5px" class="soft-cta">Salin</span>
                         </div>
                     </div>
                 </div>
@@ -221,21 +224,53 @@
                         <span class="d10" style="position:relative;left:-100px;top:-20px;border-radius:24px 0 50px 0">Instagram</span>
                         <img src="https://cdn-icons-png.flaticon.com/512/4923/4923005.png" style="width:100px;height:100px;margin:10px auto;">
                         <span style="margin:10px auto;">@bastian%example</span>
+                        <input type="text" value="@bastian%example" id="igCOPY" style="display:none">
                         <div class="flex-row">
-                            <a href="https://instagram.com"><span style="margin:10px 5px" class="soft-cta">Profil</span></a>
-                            <span style="margin:10px 5px" class="soft-cta">Salin</span>
+                            <a class="soft-cta" href="https://instagram.com"><span style="margin:10px 5px">Profil</span></a>
+                            <span onclick="copyIG()" style="margin:10px 5px" class="soft-cta">Salin</span>
                         </div>
                     </div>
                 </div>
 
             </main>
 
-        <div id="skill" class="tabs flex-col" style="display:none"> <!--tab skill-->
-            SKILL
+        <div id="skill" class="tabs flex-col-start" style="display:none"> <!--tab skill-->
+            <img src="https://cdn-icons-png.flaticon.com/512/10165/10165378.png" style="width:250px;margin:20px;">
+            <h1 style="font-weight:900;font-size:50px;">SKILL</h1>
+            <br>
+            <div class="flex-col l100">
+                <h1 class="main-c">Tools Favorit</h1>
+                <div class="flex-row" style="padding:20px">
+                    <img class="hover-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968472.png" style="width:70px;margin:20px;mix-blend-mode:luminosity">
+                    <img class="hover-img" src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" style="width:70px;margin:20px;mix-blend-mode:luminosity">
+                    <img class="hover-img" src="https://cdn-icons-png.flaticon.com/512/4649/4649547.png" style="width:70px;margin:20px;mix-blend-mode:luminosity">
+                </div>
+            </div>
         </div> <!--end tab skill-->
-
+        
         <div id="riwayat" class="tabs flex-col" style="display:none"> <!--tab skill-->
-            Riwayat
+            <img src="https://cdn-icons-png.flaticon.com/512/9874/9874824.png" style="width:250px;margin:20px;">
+            <h1 style="font-weight:900;font-size:50px;">Pengalaman</h1>
+            <br>
+            <div class="flex-col l100 box-sh">
+                <img src="https://cdn-icons-png.flaticon.com/512/3061/3061341.png" style="width:70px;">
+                <br>
+                <h1 class="main-c">PT. Desain 1</h1>
+                <h4 class="main-c" style="font-weight:200">2018 - 2020</h4>
+                <div class="flex-row" style="padding:20px">
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                </div>
+            </div>
+            <br>
+            <div class="flex-col l100 box-sh">
+                <img src="https://cdn-icons-png.flaticon.com/512/3061/3061341.png" style="width:70px;">
+                <br>
+                <h1 class="main-c">PT. Desain 2</h1>
+                <h4 class="main-c" style="font-weight:200">2018 - 2020</h4>
+                <div class="flex-row" style="padding:20px">
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                </div>
+            </div>
         </div> <!--end tab skill-->
 
         <div id="karya" class="tabs flex-col" style="display:none"> <!--tab skill-->
@@ -252,7 +287,7 @@
                         Skill
                     </div>
                     <div class="flex-col nav" style="width:20%" onclick="openTabs('riwayat')">
-                        Riwayat
+                        Pengalaman
                     </div>
                     <div class="flex-col nav" style="width:20%" onclick="openTabs('karya')">
                         Karya
@@ -282,6 +317,42 @@
                     x[i].style.display = "none";
                 }
                 document.getElementById(tabsName).style.display = "flex";
+                }
+            </script>
+            <script>
+                function copyPhone() {
+                  var copyText = document.getElementById("phoneCOPY");
+                  copyText.select();
+                  copyText.setSelectionRange(0, 99999);
+                  navigator.clipboard.writeText(copyText.value);
+                  alert("Berhasil menyalin : " + copyText.value);
+                }
+            </script>
+            <script>
+                function copyWA() {
+                  var copyText = document.getElementById("waCOPY");
+                  copyText.select();
+                  copyText.setSelectionRange(0, 99999);
+                  navigator.clipboard.writeText(copyText.value);
+                  alert("Berhasil menyalin : " + copyText.value);
+                }
+            </script>
+            <script>
+                function copyMail() {
+                  var copyText = document.getElementById("mailCOPY");
+                  copyText.select();
+                  copyText.setSelectionRange(0, 99999);
+                  navigator.clipboard.writeText(copyText.value);
+                  alert("Berhasil menyalin : " + copyText.value);
+                }
+            </script>
+            <script>
+                function copyIG() {
+                  var copyText = document.getElementById("igCOPY");
+                  copyText.select();
+                  copyText.setSelectionRange(0, 99999);
+                  navigator.clipboard.writeText(copyText.value);
+                  alert("Berhasil menyalin : " + copyText.value);
                 }
             </script>
     </body>
