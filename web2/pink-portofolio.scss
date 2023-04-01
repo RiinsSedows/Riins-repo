@@ -1,4 +1,3 @@
-// for index.dash2 only
 // Introduction of restyling !important
 // d = mean DARK
 // l = mean LIGHT
@@ -6,44 +5,44 @@
 // use - to identify separate selectors
 // // // /// // // // // //
 
-
 // LETS COLOR //
 //block object div span
 //dark-d-white-text
-$d100: #4f4f4f;
-$d80: #5f5f5f;
-$d60:#6f6f6f;
-$d40: #7e7e7e;
-$d20: #8e8e8e;
-$d10: #8e8e8e;
+$d100: #910e3a;
+$d80: #a91143;
+$d60:#c1134d;
+$d40: #d91557;
+$d20: #ed4d82;
+$d10:#f279a1;
 $white: #fff;
 //light-d-black-color
-$l100: #f9f9f9;
-$l80:#ececec;
-$l60:#d8d8d8;
-$l40:#c5c5c5;
-$l20:#b1b1b1;
+$l100:#fef2f6;
+$l80:#fbd2e0;
+$l60:#f6a6c1;
+$l40:#f6a6c1;
+$l20: #f6a6c1;
+$l10: #f6a6c195;
 $black:#000;
 
 
 //thema
 //light //use color:$black
-$background-l:#f9f9f9;
+$background-l:#fef2f6;
 //dark //use color:$white
-$background-d:#4f4f4f;
+$background-d:#790c30;
 //main // use color:$white;
-$background-m:#9e9e9e;
-$text-m:#9e9e9e;
-$text-sub: #8e8e8e; //get from $d10
-$border-m:#9e9e9e;
+$background-m:#e91e63;
+$text-m:#e91e63;
+$text-sub: #ed4d82; //get from $d10
+$border-m:#e91e63 ;
 //button //use color:$white
-$action-bg:#4f4f4f;
+$action-bg:#790c30;
 
 // CUSTOMIZING //
 $pad-1: 4px 8px;
 $pad-2: 20px 20px;
 $margin-def:20px auto;
-$bord-1: 2px solid #9e9e9e; //text-theme
+$bord-1: 2px solid $text-m;
 $round-rect:0px;
 $round-small: 5px;
 $round-medium: 15px;
@@ -133,39 +132,145 @@ h6 {
 
 .bg-default {
     background-color: $text-m;
+}
+
+// dekstop
+
+@media screen and (min-width:600px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 10px 15px 10px 33%;
     }
 
-    .active {
+    .d-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        padding: 0 !important;
+        width: 30%;
+        border-radius: 0;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        text-decoration: none;
-        color: white;
-        font-weight: 600
     }
 
-    .active:hover,
-    .active:active {
-        opacity: 0.5
+    .nav {
+        width: 80%;
+        background: $d80;
+        border-radius: $round-small;
+        margin: 10px auto;
+        padding:20px 5px;
+        text-align: center;
+        align-items: center;
+
     }
 
-    iframe {
-        background:url(https://media.tenor.com/28DFFVtvNqYAAAAC/loading.gif);
-        width:100px;
-        height:50px;
-        background-size:55% 15%;
-        background-position: center;
-        background-repeat:no-repeat;
-        background-color:$white;
+    .nav:hover,
+    .nav:active {
+        background: $d10;
+        color: $white;
+        border-radius: $round-small;
+        width: 80%;
+        cursor: pointer;
+    }
+    .d-top-nav {
+        display:none;
+    }
+    .d-nav-show{
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .d-nav-show-post {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        display: flex;
     }
 
-    // dekstop
-    //@media screen and (min-width:600px) {}
+    .d-nav-show-post2 {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        display: flex;
+        }
 
-    // mobile
-    //@media screen and (max-width:599px) {}
+        .d-show-me {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+}
 
+
+// mobile
+
+@media screen and (max-width:599px) {
+    body {
+        max-width: 550px;
+        margin: auto;
+        padding: 5px 10px;
+    }
+
+    .m-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 !important;
+        height: 50px;
+        border-radius: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav {
+        width: 20%
+    }
+
+    .nav:hover,
+    .nav:active {
+        background: $d10;
+        color: $white;
+        border-radius: $round-rect;
+        margin: 0;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .m-top-nav {
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .m-nav-hide{
+        display:none;
+    }
+    .m-show-me{display:none;}
+    }
 
     body {
         background: $background-l;
