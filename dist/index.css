@@ -1,0 +1,320 @@
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 4px #9e9e9e;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+a {
+  color: #9e9e9e;
+}
+
+p {
+  text-indent: 15px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.box-sh {
+  box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.bg-default {
+  background-color: #9e9e9e;
+}
+
+body {
+  background: #f9f9f9;
+  color: #000;
+  transition: 0.5s ease-in;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+span {
+  font-size: 14px;
+}
+
+.rect {
+  border-radius: 0px !important;
+}
+
+.round-small {
+  border-radius: 5px !important;
+}
+
+.round-medium {
+  border-radius: 15px !important;
+}
+
+.round-large {
+  border-radius: 25px !important;
+}
+
+.margin10 {
+  margin: 20px auto;
+}
+
+.main-c {
+  color: #9e9e9e;
+}
+
+.sec-c {
+  color: #8e8e8e;
+}
+
+.dark-c {
+  color: #4f4f4f;
+}
+
+.border-left-point {
+  border-left: 10px solid #9e9e9e;
+  padding-left: 12px;
+}
+
+button:hover:active {
+  background: #9e9e9e;
+  color: #fff;
+  position: relative;
+  animation: click 0.4s ease;
+}
+
+.def {
+  padding: 4px 8px;
+  background: #4f4f4f;
+  color: #fff;
+  border: 2px solid #9e9e9e;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.act-cta {
+  background-color: #f9f9f9;
+  color: #9e9e9e;
+  padding: 4px 7px;
+  border-radius: 5px;
+}
+
+.soft-cta {
+  background-color: #ececec;
+  color: #9e9e9e;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.border-img {
+  border: 6px solid #9e9e9e;
+}
+
+.act-cta:hover,
+.soft-cta:hover {
+  animation: click 0.4s ease;
+}
+
+.hover-img:hover,
+.hover-img:active {
+  mix-blend-mode: normal;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.hover-img,
+.hover-img {
+  mix-blend-mode: luminosity;
+}
+
+.wraper-btn {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  border-radius: 100%;
+  background-color: #c5c5c5;
+  transition: 1s ease;
+}
+
+.day {
+  border: 8px solid #4f4f4f;
+  transition: 1s ease;
+}
+
+.login {
+  padding: 4px 8px;
+  background: #15cb08;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+
+.register {
+  padding: 4px 8px;
+  background: #ee4747;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+
+input .text {
+  padding: 4px 8px;
+  border: 2px solid #9e9e9e;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+}
+input .send {
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: #9e9e9e;
+  color: #fff;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-col-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.flex-row-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.flex-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.d10 {
+  background-color: #8e8e8e;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.d20 {
+  background-color: #8e8e8e;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.d40 {
+  background-color: #7e7e7e;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.d60 {
+  background-color: #6f6f6f;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.d80 {
+  background-color: #5f5f5f;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.d100 {
+  background-color: #4f4f4f;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.l40 {
+  background-color: #c5c5c5;
+  color: #000;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.l60 {
+  background-color: #d8d8d8;
+  color: #000;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.l80 {
+  background-color: #ececec;
+  color: #000;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.l100 {
+  background-color: #f9f9f9;
+  color: #000;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
