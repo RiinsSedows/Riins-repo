@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta name="robots" content="noindex, nofollow">
+    <title>PONSEL MODERN CELL</title>
+    <meta name="description" content="List hp baru dan second Modern Cell" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.riins.xyz/">
+        <meta property="og:title" content="Portofolio keren dan murah | www.riins.xyz">
+        <meta property="og:description" content="Undangan Digital | Web Promo | Web Event | Web Katalog | GRATIS DOMAIN | TERMURAH •
+        Ayo buat website - mu di sini ..!!">
+        <meta property="og:image" content="https://www.riins.xyz/images/my_banner.jpg">
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://www.riins.xyz/">
+        <meta property="twitter:title" content="">
+        <meta property="twitter:description" content="">
+        <meta property="twitter:image" content="https://www.riins.xyz/images/my_banner.jpg">
+        <meta name="keywords"
+            content="riins xyz, riins com, riins, portofolio, murah, keren">
+        <link rel="canonical" href="https://www.riins.xyz">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="revisit-after" content="1 days">
+        <meta name="author" content="https://www.riins.xyz">
+        <link type="text/css" rel="stylesheet" href="dist/index.css">
+        </head>
+        <style>
+            body{width:100%;height:100%;max-width:550px;margin:0 auto;padding:0 15px;}
+            li{list-style-type: none;}
+        </style>
+    <body>
+        <div style="position:fixed;top:0;left:0;right:0;" class="flex-row">
+            <div style="width:50%;background-color:red;color:white;padding:20px" class="flex-col">HP BARU</div>
+            <div style="width:50%;background-color:blue;color:white;padding:20px" class="flex-col">HP SECOND</div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="flex-col">
+            <h1>URUTKAN</h1>
+            <div class="flex-row">
+                <button id="sort" style="margin:5px">Harga Murah Ke Tinggi</button>
+                <button id="sort2" style="margin:5px">Harga Tinggi Ke Murah</button>
+            </div>
+        </div>
+        <br><br>
+        <ul id="cat" class="cat">
+            <li id="1500">Rp. 1.500.000</li>
+            <li id="1400">Rp. 1.400.000</li>
+            <li id="1300">Rp. 1.300.000</li>
+            <li id="1700">Rp. 1.700.000</li>
+            <li id="1800">Rp. 1.800.000</li>
+            <li id="1900">Rp. 1.900.000</li>
+            <li id="1200">Rp. 1.200.000</li>
+            <li id="1600">Rp. 1.600.000</li>
+            <li id="1100">Rp. 1.100.000</li>
+            <li id="500">Rp. 500.000</li>
+            <li id="400">Rp. 400.000</li>
+            <li id="700">Rp. 700.000</li>
+            <li id="1599">Rp. 1.599.000</li>
+            <li id="1499">Rp. 1.499.000</li>
+            <li id="1399">Rp. 1.399.000</li>
+            <li id="1799">Rp. 1.799.000</li>
+            <li id="1899">Rp. 1.899.000</li>
+            <li id="1999">Rp. 1.999.000</li>
+          </ul>
+
+          <script>
+            $('#sort').click(function() {
+                $("#cat li").sort(function(a, b) { 
+                return parseInt(a.id) - parseInt(b.id);
+                }).each(function() {
+                var elem = $(this);
+                elem.remove();
+                $(elem).appendTo("#cat");
+                });
+                });
+          </script>
+          <script>
+            $('#sort2').click(function() {
+                $(".cat li").sort(function(a, b) { 
+                return parseInt(b.id) - parseInt(a.id);
+                }).each(function() {
+                var elem = $(this);
+                elem.remove();
+                $(elem).appendTo(".cat");
+                });
+                });
+          </script>
+    </body>
+    </html>
