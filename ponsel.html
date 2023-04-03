@@ -27,48 +27,141 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="revisit-after" content="1 days">
         <meta name="author" content="https://www.riins.xyz">
-        <link type="text/css" rel="stylesheet" href="dist/index.css">
+        <link type="text/css" rel="stylesheet" href="dist/purple-index.css">
         </head>
         <style>
             body{width:100%;height:100%;max-width:550px;margin:0 auto;padding:0 15px;}
-            li{list-style-type: none;}
+            li{list-style-type: none;margin:60px auto;}
+            ul{padding:0;margin:0;}
+            a{text-decoration: none;}
         </style>
     <body>
-        <div style="position:fixed;top:0;left:0;right:0;" class="flex-row">
-            <div style="width:50%;background-color:red;color:white;padding:20px" class="flex-col">HP BARU</div>
-            <div style="width:50%;background-color:blue;color:white;padding:20px" class="flex-col">HP SECOND</div>
+        <div style="position:fixed;top:0;left:0;right:0;width:100%;max-width:550px;padding:6px;border-radius:0;margin-left:auto;margin-right:auto;" class="flex-row d100">
+            <div class="flex-col d40 bold klik" style="width:50%;border-radius:0;margin:5px;font-size:18px">HP BARU</div>
+            <div class="flex-col d60 bold klik" style="width:50%;border-radius:0;margin:5px;font-size:18px">HP SECOND</div>
+        </div>
+        <div class="d60 flex-between" style="position:fixed;top:83px;right:0;left:0;width:100%;max-width:550px;padding:10px 20px 10px 20px;border-radius:0 0 20px 20px;text-align:center;margin-left:auto;margin-right:auto;">
+            <div class="soft-cta" id="menu">
+                Menu
+            </div>
+            <div class="menu-open">
+                <span class="d40">Cek Spesifikasi Lengkap</span>
+                <br>
+                <span class="d40">Lihat Review di Youtube</span>
+                <br><br>
+                <span id="close-menu">Tutup</span>
+            </div>
+            <div class="soft-cta">
+                <a href="#">Ke Atas</a>
+            </div>
         </div>
 
-        <br><br><br><br>
+        <br><br><br><br> <br><br><br><br>
 
-        <div class="flex-col">
-            <h1>URUTKAN</h1>
-            <div class="flex-row">
-                <button id="sort" style="margin:5px">Harga Murah Ke Tinggi</button>
-                <button id="sort2" style="margin:5px">Harga Tinggi Ke Murah</button>
+        <div class="flex-col" style="width:100%;margin:0;padding:0;">
+            <h1 class="grads" style="font-weight:700;font-size:35px">URUTKAN</h1>
+            <div class="flex-row l60" style="width:100%;padding:7px">
+                <div class="d20 flex-col klik" style="width:33,33%;margin:7px;padding:9px;border-radius:7px;">
+                    Harga Murah
+                </div>
+                <div class="d20 flex-col klik" style="width:33,33%;margin:7px;padding:9px;border-radius:7px;">
+                    Harga Tinggi
+                </div>
+                <div class="d20 flex-col klik" style="width:33,33%;margin:7px;padding:9px;border-radius:7px;">
+                    Merek Ponsel
+                </div>
             </div>
         </div>
         <br><br>
+
+
+    <div id="hp-baru">
+        
         <ul id="cat" class="cat">
-            <li id="1500">Rp. 1.500.000</li>
-            <li id="1400">Rp. 1.400.000</li>
-            <li id="1300">Rp. 1.300.000</li>
-            <li id="1700">Rp. 1.700.000</li>
-            <li id="1800">Rp. 1.800.000</li>
-            <li id="1900">Rp. 1.900.000</li>
-            <li id="1200">Rp. 1.200.000</li>
-            <li id="1600">Rp. 1.600.000</li>
-            <li id="1100">Rp. 1.100.000</li>
-            <li id="500">Rp. 500.000</li>
-            <li id="400">Rp. 400.000</li>
-            <li id="700">Rp. 700.000</li>
-            <li id="1599">Rp. 1.599.000</li>
-            <li id="1499">Rp. 1.499.000</li>
-            <li id="1399">Rp. 1.399.000</li>
-            <li id="1799">Rp. 1.799.000</li>
-            <li id="1899">Rp. 1.899.000</li>
-            <li id="1999">Rp. 1.999.000</li>
+
+            <li id="1500">
+                <h1>Realme GT</h1>
+            <div class="flex-row wt-bg box-sh w100">
+                <div class="w50">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-gt-neo5-se-1.jpg" class="w100">
+                </div>
+                <div class="flex-col spec">
+                        <div class="flex-row spec-list">
+                            <div class="flex-col w50">
+                                <span class="medium f-default">6.74"</span>
+                                <span>Layar</span>
+                            </div>
+                            <div class="flex-col w50">
+                                <span class="medium f-default">64mp</span>
+                                <span>Kamera</span>
+                            </div>
+                        </div>
+                        <div class="flex-row spec-list">
+                            <div class="flex-col w50">
+                                <span class="medium f-default">8/32</span>
+                                <span>Ram</span>
+                            </div>
+                            <div class="flex-col w50">
+                                <span class="medium f-default">5000</span>
+                                <span>Baterai</span>
+                            </div>
+                        </div>
+                        <div class="flex-row l80 price">
+                            1.999.000
+                        </div>
+                </div>
+            </div>
+            </li>
+
+            <li id="1500">
+                <h1>Realme GT</h1>
+            <div class="flex-row wt-bg box-sh w100">
+                <div class="w50">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-gt-neo5-se-1.jpg" class="w100">
+                </div>
+                <div class="flex-col spec">
+                        <div class="flex-row spec-list">
+                            <div class="flex-col w50">
+                                <span class="medium f-default">6.74"</span>
+                                <span>Layar</span>
+                            </div>
+                            <div class="flex-col w50">
+                                <span class="medium f-default">64mp</span>
+                                <span>Kamera</span>
+                            </div>
+                        </div>
+                        <div class="flex-row spec-list">
+                            <div class="flex-col w50">
+                                <span class="medium f-default">8/32</span>
+                                <span>Ram</span>
+                            </div>
+                            <div class="flex-col w50">
+                                <span class="medium f-default">5000</span>
+                                <span>Baterai</span>
+                            </div>
+                        </div>
+                        <div class="flex-row l80 price">
+                            1.999.000
+                        </div>
+                </div>
+            </div>
+            </li>
+
+
+
+
           </ul>
+    </div> 
+
+
+          <script>
+            $('#menu').click(function() {
+                $('.menu-open').css('display', 'flex');
+                $('#close-menu').click(function() {
+                    $('.menu-open').css('display', 'none');
+                })
+            })
+          </script>
 
           <script>
             $('#sort').click(function() {
