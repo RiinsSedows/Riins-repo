@@ -4,40 +4,20 @@
   -webkit-text-fill-color: transparent;
 }
 
-.magic {
-  background: linear-gradient(to right,#341d5b, #673ab7);
-  padding:20px;
-  color:white;
-}
-
-.magic2 {
-  background: linear-gradient(to right,#341d5b, #673ab7);
-  padding:10px 20px;
-  color:white;
-}
-
-.idle {position:relative;animation: idlee 0.6s ease-in infinite}
-
-@keyframes idlee {
-  from {left:-10px;opacity:0.5;}
-  to {left:0;opacity:1;}
-
-}
-
 @keyframes click {
   0% {
     transform: scale(1);
   }
   50% {
     transform: scale(1.1);
-    box-shadow: 0 0 4px #673ab7;
+    box-shadow: 0 0 4px white;
   }
   100% {
     transform: scale(1);
   }
 }
 a {
-  color: #673ab7;
+  color: white;
 }
 
 p {
@@ -85,7 +65,7 @@ h6 {
 }
 
 .bg-default {
-  background-color: #673ab7;
+  background-color: white;
 }
 
 @media screen and (min-width: 600px) {
@@ -258,11 +238,11 @@ span {
 }
 
 .main-c {
-  color: #673ab7;
+  color: white;
 }
 
 .sec-c {
-  color: #a384d8;
+  color: black;
 }
 
 .dark-c {
@@ -270,7 +250,7 @@ span {
 }
 
 .border-left-point {
-  border-left: 10px solid #673ab7;
+  border-left: 10px solid white;
   padding-left: 12px;
 }
 
@@ -285,21 +265,21 @@ button:hover:active {
   padding: 4px 8px;
   background: #341d5b;
   color: #fff;
-  border: 2px solid #673ab7;
+  border: 2px solid white;
   border-radius: 15px;
   text-align: center;
 }
 
 .act-cta {
-  background-color: #f6f3fb;
-  color: #673ab7;
+  background-color: white;
+  color: white;
   padding: 4px 7px;
   border-radius: 5px;
 }
 
 .soft-cta {
   background-color: #e0d6f2;
-  color: #673ab7;
+  color: white;
   padding: 4px 8px;
   border-radius: 5px;
 }
@@ -313,7 +293,7 @@ button:hover:active {
 }
 
 .border-img {
-  border: 6px solid #673ab7;
+  border: 6px solid white;
 }
 
 .act-cta:hover,
@@ -343,7 +323,7 @@ button:hover:active {
 }
 
 .day {
-  border: 8px solid #3e236d;
+  border: 8px solid black;
   transition: 1s ease;
 }
 
@@ -367,7 +347,7 @@ button:hover:active {
 
 input .text {
   padding: 4px 8px;
-  border: 2px solid #673ab7;
+  border: 2px solid white;
   border-radius: 5px;
   background: #fff;
   color: #000;
@@ -399,7 +379,7 @@ input .send {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
   text-align: left;
 }
 
@@ -456,10 +436,10 @@ input .send {
 }
 
 .d100 {
-  background-color: #3e236d;
+  background-color: black;
   color: #fff;
   padding: 20px 20px;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .l40 {
@@ -484,10 +464,10 @@ input .send {
 }
 
 .l100 {
-  background-color: #f6f3fb;
+  background-color: white;
   color: #000;
   padding: 20px 20px;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .w50 {
@@ -530,7 +510,7 @@ input .send {
 
 .klik:active, .klik:hover {
   background: #fff;
-  color: #673ab7;
+  color: white;
 }
 
 .menu-open {
