@@ -508,9 +508,19 @@ input .send {
   cursor: pointer;
 }
 
-.klik:active, .klik:hover {
+.klik:active,
+.klik:hover {
   background: #fff;
   color: white;
+}
+
+.klik2 {
+  cursor: pointer;
+}
+
+.klik2:active,
+.klik2:hover {
+  opacity: 0.5;
 }
 
 .menu-open {
@@ -526,4 +536,101 @@ input .send {
   color: #000;
   font-size: 20px;
   box-shadow: 0 4px 14px grey;
+}
+
+.g {
+  padding: 100px 20px;
+}
+
+.g-card {
+  margin: 0;
+}
+
+.g-card-list {
+  width: 100%;
+}
+
+.g-card-list-exp {
+  width: 40%;
+  height: 200px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 7px;
+}
+
+.img-sponsor {
+  width: 80%;
+}
+
+.gray {
+  color: gray;
+}
+
+.cta {
+  color: black;
+  margin: 10px 0;
+  background: gray;
+  padding: 4px 7px;
+  border-radius: 3px;
+}
+
+.rnzh-open {
+  position: fixed;
+  display: none;
+  width: 200px;
+  border-radius: 4px;
+  top: 50px;
+  right: 20px;
+  padding: 10px;
+  background: white;
+  color: black;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.call-now {
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.divider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.list-prod {
+  margin: 0 15px;
+}
+
+.act-list-prod {
+  background: navy;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.my-footer {
+  height: 700px;
+  padding: 50px 10px;
+}
+
+.my-footer-head {
+  width: 70%;
+  position: relative;
+  top: -50px;
+}
+
+.skill-cont {
+  padding: 10px;
+  background: white;
+  margin: 4px;
+}
+
+.skill-cont:hover {
+  background: #999999;
 }
